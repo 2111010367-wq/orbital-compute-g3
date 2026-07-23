@@ -1,0 +1,1536 @@
+{
+  "schema_version": "1.0",
+  "phase": "16",
+  "report": {
+    "valid": true,
+    "root_directory": "D:\\VISUALSTUDIO\\orbital-compute-g3\\resultados\\graficas_fase16",
+    "total_files": 216,
+    "total_size_bytes": 14112261,
+    "section_counts": {
+      "resumen_comparativo": 12,
+      "series_temporales": 96,
+      "inteligencia_eventos": 96,
+      "comparacion_avanzada": 12
+    },
+    "format_counts": {
+      "png": 72,
+      "svg": 72,
+      "pdf": 72
+    },
+    "issues": []
+  },
+  "files": [
+    {
+      "section": "comparacion_avanzada",
+      "relative_path": "comparacion_avanzada/01_matriz_calor_operacional.pdf",
+      "filename": "01_matriz_calor_operacional.pdf",
+      "extension": "pdf",
+      "size_bytes": 26095
+    },
+    {
+      "section": "comparacion_avanzada",
+      "relative_path": "comparacion_avanzada/01_matriz_calor_operacional.png",
+      "filename": "01_matriz_calor_operacional.png",
+      "extension": "png",
+      "size_bytes": 174984
+    },
+    {
+      "section": "comparacion_avanzada",
+      "relative_path": "comparacion_avanzada/01_matriz_calor_operacional.svg",
+      "filename": "01_matriz_calor_operacional.svg",
+      "extension": "svg",
+      "size_bytes": 84887
+    },
+    {
+      "section": "comparacion_avanzada",
+      "relative_path": "comparacion_avanzada/02_radar_multidominio.pdf",
+      "filename": "02_radar_multidominio.pdf",
+      "extension": "pdf",
+      "size_bytes": 19956
+    },
+    {
+      "section": "comparacion_avanzada",
+      "relative_path": "comparacion_avanzada/02_radar_multidominio.png",
+      "filename": "02_radar_multidominio.png",
+      "extension": "png",
+      "size_bytes": 396074
+    },
+    {
+      "section": "comparacion_avanzada",
+      "relative_path": "comparacion_avanzada/02_radar_multidominio.svg",
+      "filename": "02_radar_multidominio.svg",
+      "extension": "svg",
+      "size_bytes": 51583
+    },
+    {
+      "section": "comparacion_avanzada",
+      "relative_path": "comparacion_avanzada/03_disponibilidad_y_fedavg.pdf",
+      "filename": "03_disponibilidad_y_fedavg.pdf",
+      "extension": "pdf",
+      "size_bytes": 20571
+    },
+    {
+      "section": "comparacion_avanzada",
+      "relative_path": "comparacion_avanzada/03_disponibilidad_y_fedavg.png",
+      "filename": "03_disponibilidad_y_fedavg.png",
+      "extension": "png",
+      "size_bytes": 159500
+    },
+    {
+      "section": "comparacion_avanzada",
+      "relative_path": "comparacion_avanzada/03_disponibilidad_y_fedavg.svg",
+      "filename": "03_disponibilidad_y_fedavg.svg",
+      "extension": "svg",
+      "size_bytes": 60272
+    },
+    {
+      "section": "comparacion_avanzada",
+      "relative_path": "comparacion_avanzada/04_mapa_criticidad_resiliencia.pdf",
+      "filename": "04_mapa_criticidad_resiliencia.pdf",
+      "extension": "pdf",
+      "size_bytes": 24050
+    },
+    {
+      "section": "comparacion_avanzada",
+      "relative_path": "comparacion_avanzada/04_mapa_criticidad_resiliencia.png",
+      "filename": "04_mapa_criticidad_resiliencia.png",
+      "extension": "png",
+      "size_bytes": 134760
+    },
+    {
+      "section": "comparacion_avanzada",
+      "relative_path": "comparacion_avanzada/04_mapa_criticidad_resiliencia.svg",
+      "filename": "04_mapa_criticidad_resiliencia.svg",
+      "extension": "svg",
+      "size_bytes": 67722
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/combined_failure/01_fedavg_perdida_exactitud.pdf",
+      "filename": "01_fedavg_perdida_exactitud.pdf",
+      "extension": "pdf",
+      "size_bytes": 20221
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/combined_failure/01_fedavg_perdida_exactitud.png",
+      "filename": "01_fedavg_perdida_exactitud.png",
+      "extension": "png",
+      "size_bytes": 139316
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/combined_failure/01_fedavg_perdida_exactitud.svg",
+      "filename": "01_fedavg_perdida_exactitud.svg",
+      "extension": "svg",
+      "size_bytes": 56393
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/combined_failure/02_fedavg_participacion.pdf",
+      "filename": "02_fedavg_participacion.pdf",
+      "extension": "pdf",
+      "size_bytes": 17982
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/combined_failure/02_fedavg_participacion.png",
+      "filename": "02_fedavg_participacion.png",
+      "extension": "png",
+      "size_bytes": 75275
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/combined_failure/02_fedavg_participacion.svg",
+      "filename": "02_fedavg_participacion.svg",
+      "extension": "svg",
+      "size_bytes": 42708
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/combined_failure/03_decisiones_cognitivas.pdf",
+      "filename": "03_decisiones_cognitivas.pdf",
+      "extension": "pdf",
+      "size_bytes": 17907
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/combined_failure/03_decisiones_cognitivas.png",
+      "filename": "03_decisiones_cognitivas.png",
+      "extension": "png",
+      "size_bytes": 78347
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/combined_failure/03_decisiones_cognitivas.svg",
+      "filename": "03_decisiones_cognitivas.svg",
+      "extension": "svg",
+      "size_bytes": 44030
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/combined_failure/04_linea_tiempo_eventos.pdf",
+      "filename": "04_linea_tiempo_eventos.pdf",
+      "extension": "pdf",
+      "size_bytes": 21885
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/combined_failure/04_linea_tiempo_eventos.png",
+      "filename": "04_linea_tiempo_eventos.png",
+      "extension": "png",
+      "size_bytes": 170663
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/combined_failure/04_linea_tiempo_eventos.svg",
+      "filename": "04_linea_tiempo_eventos.svg",
+      "extension": "svg",
+      "size_bytes": 70236
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/federated_exclusion/01_fedavg_perdida_exactitud.pdf",
+      "filename": "01_fedavg_perdida_exactitud.pdf",
+      "extension": "pdf",
+      "size_bytes": 20513
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/federated_exclusion/01_fedavg_perdida_exactitud.png",
+      "filename": "01_fedavg_perdida_exactitud.png",
+      "extension": "png",
+      "size_bytes": 136313
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/federated_exclusion/01_fedavg_perdida_exactitud.svg",
+      "filename": "01_fedavg_perdida_exactitud.svg",
+      "extension": "svg",
+      "size_bytes": 56906
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/federated_exclusion/02_fedavg_participacion.pdf",
+      "filename": "02_fedavg_participacion.pdf",
+      "extension": "pdf",
+      "size_bytes": 18331
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/federated_exclusion/02_fedavg_participacion.png",
+      "filename": "02_fedavg_participacion.png",
+      "extension": "png",
+      "size_bytes": 78406
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/federated_exclusion/02_fedavg_participacion.svg",
+      "filename": "02_fedavg_participacion.svg",
+      "extension": "svg",
+      "size_bytes": 44793
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/federated_exclusion/03_decisiones_cognitivas.pdf",
+      "filename": "03_decisiones_cognitivas.pdf",
+      "extension": "pdf",
+      "size_bytes": 17895
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/federated_exclusion/03_decisiones_cognitivas.png",
+      "filename": "03_decisiones_cognitivas.png",
+      "extension": "png",
+      "size_bytes": 73622
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/federated_exclusion/03_decisiones_cognitivas.svg",
+      "filename": "03_decisiones_cognitivas.svg",
+      "extension": "svg",
+      "size_bytes": 43653
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/federated_exclusion/04_linea_tiempo_eventos.pdf",
+      "filename": "04_linea_tiempo_eventos.pdf",
+      "extension": "pdf",
+      "size_bytes": 21302
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/federated_exclusion/04_linea_tiempo_eventos.png",
+      "filename": "04_linea_tiempo_eventos.png",
+      "extension": "png",
+      "size_bytes": 151023
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/federated_exclusion/04_linea_tiempo_eventos.svg",
+      "filename": "04_linea_tiempo_eventos.svg",
+      "extension": "svg",
+      "size_bytes": 64483
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/formation_disturbance/01_fedavg_perdida_exactitud.pdf",
+      "filename": "01_fedavg_perdida_exactitud.pdf",
+      "extension": "pdf",
+      "size_bytes": 20677
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/formation_disturbance/01_fedavg_perdida_exactitud.png",
+      "filename": "01_fedavg_perdida_exactitud.png",
+      "extension": "png",
+      "size_bytes": 137534
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/formation_disturbance/01_fedavg_perdida_exactitud.svg",
+      "filename": "01_fedavg_perdida_exactitud.svg",
+      "extension": "svg",
+      "size_bytes": 57492
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/formation_disturbance/02_fedavg_participacion.pdf",
+      "filename": "02_fedavg_participacion.pdf",
+      "extension": "pdf",
+      "size_bytes": 18498
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/formation_disturbance/02_fedavg_participacion.png",
+      "filename": "02_fedavg_participacion.png",
+      "extension": "png",
+      "size_bytes": 79727
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/formation_disturbance/02_fedavg_participacion.svg",
+      "filename": "02_fedavg_participacion.svg",
+      "extension": "svg",
+      "size_bytes": 45379
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/formation_disturbance/03_decisiones_cognitivas.pdf",
+      "filename": "03_decisiones_cognitivas.pdf",
+      "extension": "pdf",
+      "size_bytes": 18182
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/formation_disturbance/03_decisiones_cognitivas.png",
+      "filename": "03_decisiones_cognitivas.png",
+      "extension": "png",
+      "size_bytes": 76876
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/formation_disturbance/03_decisiones_cognitivas.svg",
+      "filename": "03_decisiones_cognitivas.svg",
+      "extension": "svg",
+      "size_bytes": 43724
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/formation_disturbance/04_linea_tiempo_eventos.pdf",
+      "filename": "04_linea_tiempo_eventos.pdf",
+      "extension": "pdf",
+      "size_bytes": 20968
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/formation_disturbance/04_linea_tiempo_eventos.png",
+      "filename": "04_linea_tiempo_eventos.png",
+      "extension": "png",
+      "size_bytes": 138640
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/formation_disturbance/04_linea_tiempo_eventos.svg",
+      "filename": "04_linea_tiempo_eventos.svg",
+      "extension": "svg",
+      "size_bytes": 61701
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_blackout/01_fedavg_perdida_exactitud.pdf",
+      "filename": "01_fedavg_perdida_exactitud.pdf",
+      "extension": "pdf",
+      "size_bytes": 20277
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_blackout/01_fedavg_perdida_exactitud.png",
+      "filename": "01_fedavg_perdida_exactitud.png",
+      "extension": "png",
+      "size_bytes": 137614
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_blackout/01_fedavg_perdida_exactitud.svg",
+      "filename": "01_fedavg_perdida_exactitud.svg",
+      "extension": "svg",
+      "size_bytes": 53605
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_blackout/02_fedavg_participacion.pdf",
+      "filename": "02_fedavg_participacion.pdf",
+      "extension": "pdf",
+      "size_bytes": 18119
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_blackout/02_fedavg_participacion.png",
+      "filename": "02_fedavg_participacion.png",
+      "extension": "png",
+      "size_bytes": 77129
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_blackout/02_fedavg_participacion.svg",
+      "filename": "02_fedavg_participacion.svg",
+      "extension": "svg",
+      "size_bytes": 43211
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_blackout/03_decisiones_cognitivas.pdf",
+      "filename": "03_decisiones_cognitivas.pdf",
+      "extension": "pdf",
+      "size_bytes": 18747
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_blackout/03_decisiones_cognitivas.png",
+      "filename": "03_decisiones_cognitivas.png",
+      "extension": "png",
+      "size_bytes": 80997
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_blackout/03_decisiones_cognitivas.svg",
+      "filename": "03_decisiones_cognitivas.svg",
+      "extension": "svg",
+      "size_bytes": 45544
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_blackout/04_linea_tiempo_eventos.pdf",
+      "filename": "04_linea_tiempo_eventos.pdf",
+      "extension": "pdf",
+      "size_bytes": 21348
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_blackout/04_linea_tiempo_eventos.png",
+      "filename": "04_linea_tiempo_eventos.png",
+      "extension": "png",
+      "size_bytes": 147285
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_blackout/04_linea_tiempo_eventos.svg",
+      "filename": "04_linea_tiempo_eventos.svg",
+      "extension": "svg",
+      "size_bytes": 66330
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_degradation/01_fedavg_perdida_exactitud.pdf",
+      "filename": "01_fedavg_perdida_exactitud.pdf",
+      "extension": "pdf",
+      "size_bytes": 20033
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_degradation/01_fedavg_perdida_exactitud.png",
+      "filename": "01_fedavg_perdida_exactitud.png",
+      "extension": "png",
+      "size_bytes": 139514
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_degradation/01_fedavg_perdida_exactitud.svg",
+      "filename": "01_fedavg_perdida_exactitud.svg",
+      "extension": "svg",
+      "size_bytes": 56049
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_degradation/02_fedavg_participacion.pdf",
+      "filename": "02_fedavg_participacion.pdf",
+      "extension": "pdf",
+      "size_bytes": 17846
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_degradation/02_fedavg_participacion.png",
+      "filename": "02_fedavg_participacion.png",
+      "extension": "png",
+      "size_bytes": 77660
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_degradation/02_fedavg_participacion.svg",
+      "filename": "02_fedavg_participacion.svg",
+      "extension": "svg",
+      "size_bytes": 43942
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_degradation/03_decisiones_cognitivas.pdf",
+      "filename": "03_decisiones_cognitivas.pdf",
+      "extension": "pdf",
+      "size_bytes": 17672
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_degradation/03_decisiones_cognitivas.png",
+      "filename": "03_decisiones_cognitivas.png",
+      "extension": "png",
+      "size_bytes": 73040
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_degradation/03_decisiones_cognitivas.svg",
+      "filename": "03_decisiones_cognitivas.svg",
+      "extension": "svg",
+      "size_bytes": 43092
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_degradation/04_linea_tiempo_eventos.pdf",
+      "filename": "04_linea_tiempo_eventos.pdf",
+      "extension": "pdf",
+      "size_bytes": 21034
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_degradation/04_linea_tiempo_eventos.png",
+      "filename": "04_linea_tiempo_eventos.png",
+      "extension": "png",
+      "size_bytes": 146210
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/isl_degradation/04_linea_tiempo_eventos.svg",
+      "filename": "04_linea_tiempo_eventos.svg",
+      "extension": "svg",
+      "size_bytes": 63434
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/low_power/01_fedavg_perdida_exactitud.pdf",
+      "filename": "01_fedavg_perdida_exactitud.pdf",
+      "extension": "pdf",
+      "size_bytes": 18288
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/low_power/01_fedavg_perdida_exactitud.png",
+      "filename": "01_fedavg_perdida_exactitud.png",
+      "extension": "png",
+      "size_bytes": 128701
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/low_power/01_fedavg_perdida_exactitud.svg",
+      "filename": "01_fedavg_perdida_exactitud.svg",
+      "extension": "svg",
+      "size_bytes": 49392
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/low_power/02_fedavg_participacion.pdf",
+      "filename": "02_fedavg_participacion.pdf",
+      "extension": "pdf",
+      "size_bytes": 16563
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/low_power/02_fedavg_participacion.png",
+      "filename": "02_fedavg_participacion.png",
+      "extension": "png",
+      "size_bytes": 73125
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/low_power/02_fedavg_participacion.svg",
+      "filename": "02_fedavg_participacion.svg",
+      "extension": "svg",
+      "size_bytes": 40242
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/low_power/03_decisiones_cognitivas.pdf",
+      "filename": "03_decisiones_cognitivas.pdf",
+      "extension": "pdf",
+      "size_bytes": 17475
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/low_power/03_decisiones_cognitivas.png",
+      "filename": "03_decisiones_cognitivas.png",
+      "extension": "png",
+      "size_bytes": 76223
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/low_power/03_decisiones_cognitivas.svg",
+      "filename": "03_decisiones_cognitivas.svg",
+      "extension": "svg",
+      "size_bytes": 42590
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/low_power/04_linea_tiempo_eventos.pdf",
+      "filename": "04_linea_tiempo_eventos.pdf",
+      "extension": "pdf",
+      "size_bytes": 21009
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/low_power/04_linea_tiempo_eventos.png",
+      "filename": "04_linea_tiempo_eventos.png",
+      "extension": "png",
+      "size_bytes": 130955
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/low_power/04_linea_tiempo_eventos.svg",
+      "filename": "04_linea_tiempo_eventos.svg",
+      "extension": "svg",
+      "size_bytes": 60607
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/nominal/01_fedavg_perdida_exactitud.pdf",
+      "filename": "01_fedavg_perdida_exactitud.pdf",
+      "extension": "pdf",
+      "size_bytes": 18757
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/nominal/01_fedavg_perdida_exactitud.png",
+      "filename": "01_fedavg_perdida_exactitud.png",
+      "extension": "png",
+      "size_bytes": 137226
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/nominal/01_fedavg_perdida_exactitud.svg",
+      "filename": "01_fedavg_perdida_exactitud.svg",
+      "extension": "svg",
+      "size_bytes": 53762
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/nominal/02_fedavg_participacion.pdf",
+      "filename": "02_fedavg_participacion.pdf",
+      "extension": "pdf",
+      "size_bytes": 16569
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/nominal/02_fedavg_participacion.png",
+      "filename": "02_fedavg_participacion.png",
+      "extension": "png",
+      "size_bytes": 74894
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/nominal/02_fedavg_participacion.svg",
+      "filename": "02_fedavg_participacion.svg",
+      "extension": "svg",
+      "size_bytes": 41655
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/nominal/03_decisiones_cognitivas.pdf",
+      "filename": "03_decisiones_cognitivas.pdf",
+      "extension": "pdf",
+      "size_bytes": 17022
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/nominal/03_decisiones_cognitivas.png",
+      "filename": "03_decisiones_cognitivas.png",
+      "extension": "png",
+      "size_bytes": 70180
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/nominal/03_decisiones_cognitivas.svg",
+      "filename": "03_decisiones_cognitivas.svg",
+      "extension": "svg",
+      "size_bytes": 41590
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/nominal/04_linea_tiempo_eventos.pdf",
+      "filename": "04_linea_tiempo_eventos.pdf",
+      "extension": "pdf",
+      "size_bytes": 20111
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/nominal/04_linea_tiempo_eventos.png",
+      "filename": "04_linea_tiempo_eventos.png",
+      "extension": "png",
+      "size_bytes": 114595
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/nominal/04_linea_tiempo_eventos.svg",
+      "filename": "04_linea_tiempo_eventos.svg",
+      "extension": "svg",
+      "size_bytes": 56134
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/satellite_failure/01_fedavg_perdida_exactitud.pdf",
+      "filename": "01_fedavg_perdida_exactitud.pdf",
+      "extension": "pdf",
+      "size_bytes": 18992
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/satellite_failure/01_fedavg_perdida_exactitud.png",
+      "filename": "01_fedavg_perdida_exactitud.png",
+      "extension": "png",
+      "size_bytes": 93318
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/satellite_failure/01_fedavg_perdida_exactitud.svg",
+      "filename": "01_fedavg_perdida_exactitud.svg",
+      "extension": "svg",
+      "size_bytes": 50808
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/satellite_failure/02_fedavg_participacion.pdf",
+      "filename": "02_fedavg_participacion.pdf",
+      "extension": "pdf",
+      "size_bytes": 17167
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/satellite_failure/02_fedavg_participacion.png",
+      "filename": "02_fedavg_participacion.png",
+      "extension": "png",
+      "size_bytes": 71192
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/satellite_failure/02_fedavg_participacion.svg",
+      "filename": "02_fedavg_participacion.svg",
+      "extension": "svg",
+      "size_bytes": 39377
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/satellite_failure/03_decisiones_cognitivas.pdf",
+      "filename": "03_decisiones_cognitivas.pdf",
+      "extension": "pdf",
+      "size_bytes": 17531
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/satellite_failure/03_decisiones_cognitivas.png",
+      "filename": "03_decisiones_cognitivas.png",
+      "extension": "png",
+      "size_bytes": 79420
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/satellite_failure/03_decisiones_cognitivas.svg",
+      "filename": "03_decisiones_cognitivas.svg",
+      "extension": "svg",
+      "size_bytes": 42528
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/satellite_failure/04_linea_tiempo_eventos.pdf",
+      "filename": "04_linea_tiempo_eventos.pdf",
+      "extension": "pdf",
+      "size_bytes": 20680
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/satellite_failure/04_linea_tiempo_eventos.png",
+      "filename": "04_linea_tiempo_eventos.png",
+      "extension": "png",
+      "size_bytes": 134349
+    },
+    {
+      "section": "inteligencia_eventos",
+      "relative_path": "inteligencia_eventos/satellite_failure/04_linea_tiempo_eventos.svg",
+      "filename": "04_linea_tiempo_eventos.svg",
+      "extension": "svg",
+      "size_bytes": 61728
+    },
+    {
+      "section": "resumen_comparativo",
+      "relative_path": "resumen_comparativo/01_ranking_resiliencia.pdf",
+      "filename": "01_ranking_resiliencia.pdf",
+      "extension": "pdf",
+      "size_bytes": 18876
+    },
+    {
+      "section": "resumen_comparativo",
+      "relative_path": "resumen_comparativo/01_ranking_resiliencia.png",
+      "filename": "01_ranking_resiliencia.png",
+      "extension": "png",
+      "size_bytes": 91713
+    },
+    {
+      "section": "resumen_comparativo",
+      "relative_path": "resumen_comparativo/01_ranking_resiliencia.svg",
+      "filename": "01_ranking_resiliencia.svg",
+      "extension": "svg",
+      "size_bytes": 48748
+    },
+    {
+      "section": "resumen_comparativo",
+      "relative_path": "resumen_comparativo/02_error_final_formacion.pdf",
+      "filename": "02_error_final_formacion.pdf",
+      "extension": "pdf",
+      "size_bytes": 20076
+    },
+    {
+      "section": "resumen_comparativo",
+      "relative_path": "resumen_comparativo/02_error_final_formacion.png",
+      "filename": "02_error_final_formacion.png",
+      "extension": "png",
+      "size_bytes": 121977
+    },
+    {
+      "section": "resumen_comparativo",
+      "relative_path": "resumen_comparativo/02_error_final_formacion.svg",
+      "filename": "02_error_final_formacion.svg",
+      "extension": "svg",
+      "size_bytes": 51503
+    },
+    {
+      "section": "resumen_comparativo",
+      "relative_path": "resumen_comparativo/03_soc_minimo.pdf",
+      "filename": "03_soc_minimo.pdf",
+      "extension": "pdf",
+      "size_bytes": 19540
+    },
+    {
+      "section": "resumen_comparativo",
+      "relative_path": "resumen_comparativo/03_soc_minimo.png",
+      "filename": "03_soc_minimo.png",
+      "extension": "png",
+      "size_bytes": 134234
+    },
+    {
+      "section": "resumen_comparativo",
+      "relative_path": "resumen_comparativo/03_soc_minimo.svg",
+      "filename": "03_soc_minimo.svg",
+      "extension": "svg",
+      "size_bytes": 53482
+    },
+    {
+      "section": "resumen_comparativo",
+      "relative_path": "resumen_comparativo/04_margen_minimo_ka.pdf",
+      "filename": "04_margen_minimo_ka.pdf",
+      "extension": "pdf",
+      "size_bytes": 18294
+    },
+    {
+      "section": "resumen_comparativo",
+      "relative_path": "resumen_comparativo/04_margen_minimo_ka.png",
+      "filename": "04_margen_minimo_ka.png",
+      "extension": "png",
+      "size_bytes": 137827
+    },
+    {
+      "section": "resumen_comparativo",
+      "relative_path": "resumen_comparativo/04_margen_minimo_ka.svg",
+      "filename": "04_margen_minimo_ka.svg",
+      "extension": "svg",
+      "size_bytes": 54158
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/combined_failure/01_error_formacion_temporal.pdf",
+      "filename": "01_error_formacion_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 20708
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/combined_failure/01_error_formacion_temporal.png",
+      "filename": "01_error_formacion_temporal.png",
+      "extension": "png",
+      "size_bytes": 178261
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/combined_failure/01_error_formacion_temporal.svg",
+      "filename": "01_error_formacion_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 62409
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/combined_failure/02_soc_temporal.pdf",
+      "filename": "02_soc_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 21777
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/combined_failure/02_soc_temporal.png",
+      "filename": "02_soc_temporal.png",
+      "extension": "png",
+      "size_bytes": 166605
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/combined_failure/02_soc_temporal.svg",
+      "filename": "02_soc_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 63817
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/combined_failure/03_margen_ka_temporal.pdf",
+      "filename": "03_margen_ka_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 19882
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/combined_failure/03_margen_ka_temporal.png",
+      "filename": "03_margen_ka_temporal.png",
+      "extension": "png",
+      "size_bytes": 162590
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/combined_failure/03_margen_ka_temporal.svg",
+      "filename": "03_margen_ka_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 63016
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/combined_failure/04_disponibilidad_isl_temporal.pdf",
+      "filename": "04_disponibilidad_isl_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 18392
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/combined_failure/04_disponibilidad_isl_temporal.png",
+      "filename": "04_disponibilidad_isl_temporal.png",
+      "extension": "png",
+      "size_bytes": 108466
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/combined_failure/04_disponibilidad_isl_temporal.svg",
+      "filename": "04_disponibilidad_isl_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 59871
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/federated_exclusion/01_error_formacion_temporal.pdf",
+      "filename": "01_error_formacion_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 20887
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/federated_exclusion/01_error_formacion_temporal.png",
+      "filename": "01_error_formacion_temporal.png",
+      "extension": "png",
+      "size_bytes": 158875
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/federated_exclusion/01_error_formacion_temporal.svg",
+      "filename": "01_error_formacion_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 60869
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/federated_exclusion/02_soc_temporal.pdf",
+      "filename": "02_soc_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 21622
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/federated_exclusion/02_soc_temporal.png",
+      "filename": "02_soc_temporal.png",
+      "extension": "png",
+      "size_bytes": 149209
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/federated_exclusion/02_soc_temporal.svg",
+      "filename": "02_soc_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 59148
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/federated_exclusion/03_margen_ka_temporal.pdf",
+      "filename": "03_margen_ka_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 20251
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/federated_exclusion/03_margen_ka_temporal.png",
+      "filename": "03_margen_ka_temporal.png",
+      "extension": "png",
+      "size_bytes": 124253
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/federated_exclusion/03_margen_ka_temporal.svg",
+      "filename": "03_margen_ka_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 59154
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/federated_exclusion/04_disponibilidad_isl_temporal.pdf",
+      "filename": "04_disponibilidad_isl_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 18870
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/federated_exclusion/04_disponibilidad_isl_temporal.png",
+      "filename": "04_disponibilidad_isl_temporal.png",
+      "extension": "png",
+      "size_bytes": 94171
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/federated_exclusion/04_disponibilidad_isl_temporal.svg",
+      "filename": "04_disponibilidad_isl_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 56211
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/formation_disturbance/01_error_formacion_temporal.pdf",
+      "filename": "01_error_formacion_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 20528
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/formation_disturbance/01_error_formacion_temporal.png",
+      "filename": "01_error_formacion_temporal.png",
+      "extension": "png",
+      "size_bytes": 169239
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/formation_disturbance/01_error_formacion_temporal.svg",
+      "filename": "01_error_formacion_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 58149
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/formation_disturbance/02_soc_temporal.pdf",
+      "filename": "02_soc_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 21247
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/formation_disturbance/02_soc_temporal.png",
+      "filename": "02_soc_temporal.png",
+      "extension": "png",
+      "size_bytes": 141383
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/formation_disturbance/02_soc_temporal.svg",
+      "filename": "02_soc_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 56430
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/formation_disturbance/03_margen_ka_temporal.pdf",
+      "filename": "03_margen_ka_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 19567
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/formation_disturbance/03_margen_ka_temporal.png",
+      "filename": "03_margen_ka_temporal.png",
+      "extension": "png",
+      "size_bytes": 118957
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/formation_disturbance/03_margen_ka_temporal.svg",
+      "filename": "03_margen_ka_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 55822
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/formation_disturbance/04_disponibilidad_isl_temporal.pdf",
+      "filename": "04_disponibilidad_isl_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 18026
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/formation_disturbance/04_disponibilidad_isl_temporal.png",
+      "filename": "04_disponibilidad_isl_temporal.png",
+      "extension": "png",
+      "size_bytes": 85441
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/formation_disturbance/04_disponibilidad_isl_temporal.svg",
+      "filename": "04_disponibilidad_isl_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 52642
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_blackout/01_error_formacion_temporal.pdf",
+      "filename": "01_error_formacion_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 20634
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_blackout/01_error_formacion_temporal.png",
+      "filename": "01_error_formacion_temporal.png",
+      "extension": "png",
+      "size_bytes": 155053
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_blackout/01_error_formacion_temporal.svg",
+      "filename": "01_error_formacion_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 59592
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_blackout/02_soc_temporal.pdf",
+      "filename": "02_soc_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 21352
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_blackout/02_soc_temporal.png",
+      "filename": "02_soc_temporal.png",
+      "extension": "png",
+      "size_bytes": 145802
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_blackout/02_soc_temporal.svg",
+      "filename": "02_soc_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 57867
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_blackout/03_margen_ka_temporal.pdf",
+      "filename": "03_margen_ka_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 19637
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_blackout/03_margen_ka_temporal.png",
+      "filename": "03_margen_ka_temporal.png",
+      "extension": "png",
+      "size_bytes": 120454
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_blackout/03_margen_ka_temporal.svg",
+      "filename": "03_margen_ka_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 57288
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_blackout/04_disponibilidad_isl_temporal.pdf",
+      "filename": "04_disponibilidad_isl_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 18299
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_blackout/04_disponibilidad_isl_temporal.png",
+      "filename": "04_disponibilidad_isl_temporal.png",
+      "extension": "png",
+      "size_bytes": 88908
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_blackout/04_disponibilidad_isl_temporal.svg",
+      "filename": "04_disponibilidad_isl_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 54362
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_degradation/01_error_formacion_temporal.pdf",
+      "filename": "01_error_formacion_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 20794
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_degradation/01_error_formacion_temporal.png",
+      "filename": "01_error_formacion_temporal.png",
+      "extension": "png",
+      "size_bytes": 158311
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_degradation/01_error_formacion_temporal.svg",
+      "filename": "01_error_formacion_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 60292
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_degradation/02_soc_temporal.pdf",
+      "filename": "02_soc_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 21528
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_degradation/02_soc_temporal.png",
+      "filename": "02_soc_temporal.png",
+      "extension": "png",
+      "size_bytes": 148703
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_degradation/02_soc_temporal.svg",
+      "filename": "02_soc_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 58571
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_degradation/03_margen_ka_temporal.pdf",
+      "filename": "03_margen_ka_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 19539
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_degradation/03_margen_ka_temporal.png",
+      "filename": "03_margen_ka_temporal.png",
+      "extension": "png",
+      "size_bytes": 144238
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_degradation/03_margen_ka_temporal.svg",
+      "filename": "03_margen_ka_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 57665
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_degradation/04_disponibilidad_isl_temporal.pdf",
+      "filename": "04_disponibilidad_isl_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 18148
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_degradation/04_disponibilidad_isl_temporal.png",
+      "filename": "04_disponibilidad_isl_temporal.png",
+      "extension": "png",
+      "size_bytes": 93479
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/isl_degradation/04_disponibilidad_isl_temporal.svg",
+      "filename": "04_disponibilidad_isl_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 54677
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/low_power/01_error_formacion_temporal.pdf",
+      "filename": "01_error_formacion_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 19807
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/low_power/01_error_formacion_temporal.png",
+      "filename": "01_error_formacion_temporal.png",
+      "extension": "png",
+      "size_bytes": 142540
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/low_power/01_error_formacion_temporal.svg",
+      "filename": "01_error_formacion_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 55270
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/low_power/02_soc_temporal.pdf",
+      "filename": "02_soc_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 20511
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/low_power/02_soc_temporal.png",
+      "filename": "02_soc_temporal.png",
+      "extension": "png",
+      "size_bytes": 135599
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/low_power/02_soc_temporal.svg",
+      "filename": "02_soc_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 53548
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/low_power/03_margen_ka_temporal.pdf",
+      "filename": "03_margen_ka_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 19106
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/low_power/03_margen_ka_temporal.png",
+      "filename": "03_margen_ka_temporal.png",
+      "extension": "png",
+      "size_bytes": 107936
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/low_power/03_margen_ka_temporal.svg",
+      "filename": "03_margen_ka_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 53457
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/low_power/04_disponibilidad_isl_temporal.pdf",
+      "filename": "04_disponibilidad_isl_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 17522
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/low_power/04_disponibilidad_isl_temporal.png",
+      "filename": "04_disponibilidad_isl_temporal.png",
+      "extension": "png",
+      "size_bytes": 77100
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/low_power/04_disponibilidad_isl_temporal.svg",
+      "filename": "04_disponibilidad_isl_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 50228
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/nominal/01_error_formacion_temporal.pdf",
+      "filename": "01_error_formacion_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 18348
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/nominal/01_error_formacion_temporal.png",
+      "filename": "01_error_formacion_temporal.png",
+      "extension": "png",
+      "size_bytes": 132348
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/nominal/01_error_formacion_temporal.svg",
+      "filename": "01_error_formacion_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 51514
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/nominal/02_soc_temporal.pdf",
+      "filename": "02_soc_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 19439
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/nominal/02_soc_temporal.png",
+      "filename": "02_soc_temporal.png",
+      "extension": "png",
+      "size_bytes": 122585
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/nominal/02_soc_temporal.svg",
+      "filename": "02_soc_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 50269
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/nominal/03_margen_ka_temporal.pdf",
+      "filename": "03_margen_ka_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 17467
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/nominal/03_margen_ka_temporal.png",
+      "filename": "03_margen_ka_temporal.png",
+      "extension": "png",
+      "size_bytes": 97251
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/nominal/03_margen_ka_temporal.svg",
+      "filename": "03_margen_ka_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 49452
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/nominal/04_disponibilidad_isl_temporal.pdf",
+      "filename": "04_disponibilidad_isl_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 16353
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/nominal/04_disponibilidad_isl_temporal.png",
+      "filename": "04_disponibilidad_isl_temporal.png",
+      "extension": "png",
+      "size_bytes": 66450
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/nominal/04_disponibilidad_isl_temporal.svg",
+      "filename": "04_disponibilidad_isl_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 46867
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/satellite_failure/01_error_formacion_temporal.pdf",
+      "filename": "01_error_formacion_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 20122
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/satellite_failure/01_error_formacion_temporal.png",
+      "filename": "01_error_formacion_temporal.png",
+      "extension": "png",
+      "size_bytes": 144916
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/satellite_failure/01_error_formacion_temporal.svg",
+      "filename": "01_error_formacion_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 57208
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/satellite_failure/02_soc_temporal.pdf",
+      "filename": "02_soc_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 20831
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/satellite_failure/02_soc_temporal.png",
+      "filename": "02_soc_temporal.png",
+      "extension": "png",
+      "size_bytes": 128869
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/satellite_failure/02_soc_temporal.svg",
+      "filename": "02_soc_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 55448
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/satellite_failure/03_margen_ka_temporal.pdf",
+      "filename": "03_margen_ka_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 19283
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/satellite_failure/03_margen_ka_temporal.png",
+      "filename": "03_margen_ka_temporal.png",
+      "extension": "png",
+      "size_bytes": 111119
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/satellite_failure/03_margen_ka_temporal.svg",
+      "filename": "03_margen_ka_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 55134
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/satellite_failure/04_disponibilidad_isl_temporal.pdf",
+      "filename": "04_disponibilidad_isl_temporal.pdf",
+      "extension": "pdf",
+      "size_bytes": 17932
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/satellite_failure/04_disponibilidad_isl_temporal.png",
+      "filename": "04_disponibilidad_isl_temporal.png",
+      "extension": "png",
+      "size_bytes": 79469
+    },
+    {
+      "section": "series_temporales",
+      "relative_path": "series_temporales/satellite_failure/04_disponibilidad_isl_temporal.svg",
+      "filename": "04_disponibilidad_isl_temporal.svg",
+      "extension": "svg",
+      "size_bytes": 52055
+    }
+  ]
+}
