@@ -1,0 +1,83 @@
+{
+  "config": {
+    "n_satellites": 3,
+    "sim_hours": 1.0,
+    "n_jobs": 5
+  },
+  "scheduler": {
+    "total_jobs": 5,
+    "completed": 5,
+    "running": 0,
+    "queued": 0,
+    "preempted": 0,
+    "idle_steps": 37,
+    "charge_steps": 0
+  },
+  "fleet_utilization_pct": 78.0,
+  "total_compute_hours": 2.34,
+  "satellite_details": {
+    "SAT-000": {
+      "compute_pct": 76.7,
+      "eclipse_pct": 46.7,
+      "avg_battery_pct": 90.3,
+      "avg_temp_c": 11.4,
+      "max_temp_c": 22.2,
+      "min_battery_pct": 82.4,
+      "contact_windows": 1,
+      "total_contact_minutes": 6.0
+    },
+    "SAT-001": {
+      "compute_pct": 76.7,
+      "eclipse_pct": 0.0,
+      "avg_battery_pct": 93.3,
+      "avg_temp_c": 14.2,
+      "max_temp_c": 23.3,
+      "min_battery_pct": 82.1,
+      "contact_windows": 2,
+      "total_contact_minutes": 16.0
+    },
+    "SAT-002": {
+      "compute_pct": 85.0,
+      "eclipse_pct": 53.3,
+      "avg_battery_pct": 78.5,
+      "avg_temp_c": 15.2,
+      "max_temp_c": 23.2,
+      "min_battery_pct": 74.2,
+      "contact_windows": 2,
+      "total_contact_minutes": 12.0
+    }
+  },
+  "completed_jobs": [
+    {
+      "job_id": "JOB-0000",
+      "satellite": "SAT-001",
+      "duration_s": 382.5,
+      "power_w": 583.7
+    },
+    {
+      "job_id": "JOB-0002",
+      "satellite": "SAT-002",
+      "duration_s": 404.9,
+      "power_w": 554.3
+    },
+    {
+      "job_id": "JOB-0001",
+      "satellite": "SAT-000",
+      "duration_s": 2730.4,
+      "power_w": 333.9
+    },
+    {
+      "job_id": "JOB-0003",
+      "satellite": "SAT-001",
+      "duration_s": 2286.7,
+      "power_w": 339.6
+    },
+    {
+      "job_id": "JOB-0004",
+      "satellite": "SAT-002",
+      "duration_s": 2614.4,
+      "power_w": 629.6
+    }
+  ],
+  "preemption_events": 0
+}
