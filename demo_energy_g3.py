@@ -10,7 +10,7 @@ def main() -> None:
     satellites = {
         "SAT-000": CubeSatEnergySystem(initial_soc=0.80),
         "SAT-001": CubeSatEnergySystem(initial_soc=0.65),
-        "SAT-002": CubeSatEnergySystem(initial_soc=0.40),
+        "SAT-002": CubeSatEnergySystem(initial_soc=0.25),
     }
 
     time_step_s = 300.0
@@ -58,7 +58,8 @@ def main() -> None:
                 f"Pload={result.load_power_w:5.1f} W | "
                 f"Pnet={result.net_power_w:6.1f} W | "
                 f"Modo={result.mode.value:15} | "
-                f"FL={'SÍ' if result.federated_training_allowed else 'NO'}"
+                f"FL_activo={'SÍ' if training_active else 'NO'} | "
+                f"FL_permitido={'SÍ' if result.federated_training_allowed else 'NO'}"
             )
 
 
