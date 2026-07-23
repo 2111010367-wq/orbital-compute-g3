@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0",
+  "critical_scenario": "SATELLITE_FAILURE",
+  "critical_score": 69.67294256452794,
+  "scenario_count": 8,
+  "ranking": [
+    {
+      "scenario": "SATELLITE_FAILURE",
+      "score": 69.67294256452794,
+      "level": "CRITICO",
+      "formation_penalty": 0.7775550575659529,
+      "energy_penalty": 0.0,
+      "rf_margin_penalty": 0.0,
+      "link_availability_penalty": 0.33879781420765026,
+      "node_availability_penalty": 0.16939890710382513,
+      "federated_learning_penalty": 0.8,
+      "global_accuracy_penalty": 0.0,
+      "findings": [
+        "DEGRADADO: error de formación igual o superior a 0.50 m.",
+        "CRITICO: disponibilidad ISL inferior al 80 %.",
+        "CRITICO: disponibilidad de nodos inferior al 90 %.",
+        "CRITICO: menos del 40 % de rondas FedAvg fueron completadas."
+      ]
+    },
+    {
+      "scenario": "COMBINED_FAILURE",
+      "score": 71.21165887431683,
+      "level": "CRITICO",
+      "formation_penalty": 0.08226485265167564,
+      "energy_penalty": 0.5142690058479537,
+      "rf_margin_penalty": 0.8428831977845291,
+      "link_availability_penalty": 0.0,
+      "node_availability_penalty": 0.0,
+      "federated_learning_penalty": 0.0,
+      "global_accuracy_penalty": 0.0,
+      "findings": [
+        "CRITICO: SOC inferior al 15 %.",
+        "DEGRADADO: margen Ka inferior a 10 dB."
+      ]
+    },
+    {
+      "scenario": "ISL_DEGRADATION",
+      "score": 83.26041226004219,
+      "level": "DEGRADADO",
+      "formation_penalty": 0.0,
+      "energy_penalty": 0.0,
+      "rf_margin_penalty": 0.8369793869978903,
+      "link_availability_penalty": 0.0,
+      "node_availability_penalty": 0.0,
+      "federated_learning_penalty": 0.0,
+      "global_accuracy_penalty": 0.0,
+      "findings": [
+        "DEGRADADO: margen Ka inferior a 10 dB."
+      ]
+    },
+    {
+      "scenario": "FORMATION_DISTURBANCE",
+      "score": 87.68877766282232,
+      "level": "DEGRADADO",
+      "formation_penalty": 0.615561116858884,
+      "energy_penalty": 0.0,
+      "rf_margin_penalty": 0.0,
+      "link_availability_penalty": 0.0,
+      "node_availability_penalty": 0.0,
+      "federated_learning_penalty": 0.0,
+      "global_accuracy_penalty": 0.0,
+      "findings": [
+        "DEGRADADO: error de formación igual o superior a 0.50 m."
+      ]
+    },
+    {
+      "scenario": "LOW_POWER",
+      "score": 93.91461988304094,
+      "level": "DEGRADADO",
+      "formation_penalty": 0.0,
+      "energy_penalty": 0.3042690058479532,
+      "rf_margin_penalty": 0.0,
+      "link_availability_penalty": 0.0,
+      "node_availability_penalty": 0.0,
+      "federated_learning_penalty": 0.0,
+      "global_accuracy_penalty": 0.0,
+      "findings": [
+        "DEGRADADO: SOC inferior al 20 %."
+      ]
+    },
+    {
+      "scenario": "ISL_BLACKOUT",
+      "score": 96.36065573770492,
+      "level": "DEGRADADO",
+      "formation_penalty": 0.0,
+      "energy_penalty": 0.0,
+      "rf_margin_penalty": 0.0,
+      "link_availability_penalty": 0.10928961748633881,
+      "node_availability_penalty": 0.0,
+      "federated_learning_penalty": 0.20000000000000007,
+      "global_accuracy_penalty": 0.0,
+      "findings": [
+        "DEGRADADO: disponibilidad ISL inferior al 95 %.",
+        "DEGRADADO: menos del 60 % de rondas FedAvg fueron completadas."
+      ]
+    },
+    {
+      "scenario": "FEDERATED_EXCLUSION",
+      "score": 100.0,
+      "level": "ROBUSTO",
+      "formation_penalty": 0.0,
+      "energy_penalty": 0.0,
+      "rf_margin_penalty": 0.0,
+      "link_availability_penalty": 0.0,
+      "node_availability_penalty": 0.0,
+      "federated_learning_penalty": 0.0,
+      "global_accuracy_penalty": 0.0,
+      "findings": []
+    },
+    {
+      "scenario": "NOMINAL",
+      "score": 100.0,
+      "level": "ROBUSTO",
+      "formation_penalty": 0.0,
+      "energy_penalty": 0.0,
+      "rf_margin_penalty": 0.0,
+      "link_availability_penalty": 0.0,
+      "node_availability_penalty": 0.0,
+      "federated_learning_penalty": 0.0,
+      "global_accuracy_penalty": 0.0,
+      "findings": []
+    }
+  ]
+}

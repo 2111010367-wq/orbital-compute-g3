@@ -1,0 +1,6547 @@
+{
+  "scenario": {
+    "name": "COMBINED_FAILURE",
+    "description": "Combinación de perturbación de formación, pérdida RF y energía crítica.",
+    "events": [
+      {
+        "effect": "ADD_POSITION_OFFSET",
+        "start_time_s": 600.0,
+        "duration_s": 0.0,
+        "satellite_id": "SAT-001",
+        "value": [
+          100.0,
+          150.0,
+          0.0
+        ],
+        "description": "Perturbación de formación en SAT-001."
+      },
+      {
+        "effect": "ADD_LINK_LOSS_DB",
+        "start_time_s": 1200.0,
+        "duration_s": 900.0,
+        "satellite_id": "SAT-001",
+        "value": 35.0,
+        "description": "Degradación temporal del enlace de SAT-001."
+      },
+      {
+        "effect": "SET_SOC",
+        "start_time_s": 1800.0,
+        "duration_s": 0.0,
+        "satellite_id": "SAT-002",
+        "value": 0.18,
+        "description": "SOC crítico en SAT-002."
+      }
+    ]
+  },
+  "snapshots": [
+    {
+      "time_s": 0.0,
+      "time_min": 0.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.143814365482726,
+      "ebn0_db": 48.143814365482726,
+      "link_available": true,
+      "soc": 0.8,
+      "energy_mode": "NORMAL",
+      "temperature_c": 26.0,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": true,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 0.0,
+      "time_min": 0.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        0.0,
+        1200.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 200.0,
+      "control_acceleration_m_s2": [
+        -0.0,
+        -0.001,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.2,
+      "link_margin_db": 40.143814365482726,
+      "ebn0_db": 48.143814365482726,
+      "link_available": true,
+      "soc": 0.65,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.0,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 0.0,
+      "time_min": 0.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.0,
+        -1050.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 50.0,
+      "control_acceleration_m_s2": [
+        -0.0,
+        0.001,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.05,
+      "link_margin_db": 41.30365330503646,
+      "ebn0_db": 49.30365330503646,
+      "link_available": true,
+      "soc": 0.25,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 60.0,
+      "time_min": 1.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.15683419417783,
+      "ebn0_db": 48.15683419417783,
+      "link_available": true,
+      "soc": 0.8035,
+      "energy_mode": "NORMAL",
+      "temperature_c": 26.2,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 60.0,
+      "time_min": 1.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -0.07882730588777774,
+        1198.202589060064,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.003939948012238718,
+        -0.05982739599573541,
+        0.0
+      ],
+      "formation_error_m": 198.20260473529788,
+      "control_acceleration_m_s2": [
+        9.49513071177021e-06,
+        -0.0009999549202302904,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.198202591653008,
+      "link_margin_db": 40.15683419417783,
+      "ebn0_db": 48.15683419417783,
+      "link_available": true,
+      "soc": 0.6535,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.1,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 60.0,
+      "time_min": 1.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.07882730588777774,
+        -1048.202589060064,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.003939948012238718,
+        0.05982739599573541,
+        0.0
+      ],
+      "formation_error_m": 48.20265351448557,
+      "control_acceleration_m_s2": [
+        -3.309613021566531e-05,
+        0.00048543261323539535,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0482025920240634,
+      "link_margin_db": 41.318534700371515,
+      "ebn0_db": 49.318534700371515,
+      "link_available": true,
+      "soc": 0.2535,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 120.0,
+      "time_min": 2.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.195788877692905,
+      "ebn0_db": 48.195788877692905,
+      "link_available": true,
+      "soc": 0.807,
+      "energy_mode": "NORMAL",
+      "temperature_c": 26.38,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 120.0,
+      "time_min": 2.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -0.6130197049103977,
+        1192.8407388942414,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.015173319124650725,
+        -0.11865499821953389,
+        0.0
+      ],
+      "formation_error_m": 192.84171325321608,
+      "control_acceleration_m_s2": [
+        4.5916612989007094e-05,
+        -0.000998945276104561,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.1928408964144877,
+      "link_margin_db": 40.195788877692905,
+      "ebn0_db": 48.195788877692905,
+      "link_available": true,
+      "soc": 0.657,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.19,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 120.0,
+      "time_min": 2.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.5299947746251362,
+        -1043.763686514468,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.011731086420474757,
+        0.08796545512139319,
+        0.0
+      ],
+      "formation_error_m": 43.766895615267885,
+      "control_acceleration_m_s2": [
+        -0.00010444858685630079,
+        0.00017155008931821387,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0437638210729159,
+      "link_margin_db": 41.355394501014786,
+      "ebn0_db": 49.355394501014786,
+      "link_available": true,
+      "soc": 0.257,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 180.0,
+      "time_min": 3.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.26037286142599,
+      "ebn0_db": 48.26037286142599,
+      "link_available": true,
+      "soc": 0.8105,
+      "energy_mode": "NORMAL",
+      "temperature_c": 26.541999999999998,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 180.0,
+      "time_min": 3.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -1.9903490498194762,
+        1184.0027405312242,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.032033082899149995,
+        -0.17557584918638086,
+        0.0
+      ],
+      "formation_error_m": 184.0135049727088,
+      "control_acceleration_m_s2": [
+        0.00012902811235285936,
+        -0.000991640936136996,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.1840044134524117,
+      "link_margin_db": 40.26037286142599,
+      "ebn0_db": 48.26037286142599,
+      "link_available": true,
+      "soc": 0.6605000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.271,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 180.0,
+      "time_min": 3.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        1.4089452899168606,
+        -1038.2307330900326,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.017782030459104627,
+        0.0963338687824549,
+        0.0
+      ],
+      "formation_error_m": 38.25668672835234,
+      "control_acceleration_m_s2": [
+        -0.00017043514947117424,
+        -6.056288458987651e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0382316891038803,
+      "link_margin_db": 41.40155367916714,
+      "ebn0_db": 49.40155367916714,
+      "link_available": true,
+      "soc": 0.26050000000000006,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 240.0,
+      "time_min": 4.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.3500639983741,
+      "ebn0_db": 48.3500639983741,
+      "link_available": true,
+      "soc": 0.8140000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 26.6878,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 240.0,
+      "time_min": 4.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -4.461590979260997,
+        1171.832710327612,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0516143709733982,
+        -0.22966315692418982,
+        0.0
+      ],
+      "formation_error_m": 171.89062258482636,
+      "control_acceleration_m_s2": [
+        0.0002995520099504357,
+        -0.0009540799721903055,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.1718412037421382,
+      "link_margin_db": 40.3500639983741,
+      "ebn0_db": 48.3500639983741,
+      "link_available": true,
+      "soc": 0.664,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.3439,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 240.0,
+      "time_min": 4.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        2.556616217247549,
+        -1032.5352389202164,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0204519611127504,
+        0.09345749682915992,
+        0.0
+      ],
+      "formation_error_m": 32.63553367233115,
+      "control_acceleration_m_s2": [
+        -0.0002147480132469542,
+        -9.695519622895043e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0325384040792434,
+      "link_margin_db": 41.44931501217596,
+      "ebn0_db": 49.44931501217596,
+      "link_available": true,
+      "soc": 0.26400000000000007,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 300.0,
+      "time_min": 5.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.46387655871126,
+      "ebn0_db": 48.46387655871126,
+      "link_available": true,
+      "soc": 0.8175000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 26.81902,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 300.0,
+      "time_min": 5.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -8.026162683093713,
+        1156.558697640142,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.06841497962009277,
+        -0.2791028001429154,
+        0.0
+      ],
+      "formation_error_m": 156.76429789398134,
+      "control_acceleration_m_s2": [
+        0.0006188997170294723,
+        -0.000785470012324366,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.1565865468586762,
+      "link_margin_db": 40.46387655871126,
+      "ebn0_db": 48.46387655871126,
+      "link_available": true,
+      "soc": 0.6675000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.40951,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 300.0,
+      "time_min": 5.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        3.7735610302135703,
+        -1027.1825649245432,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.01997095169731965,
+        0.08497550502708354,
+        0.0
+      ],
+      "formation_error_m": 27.443243225350578,
+      "control_acceleration_m_s2": [
+        -0.00023523883418282863,
+        -0.00013615274172580508,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0271894963675456,
+      "link_margin_db": 41.49442788994858,
+      "ebn0_db": 49.49442788994858,
+      "link_available": true,
+      "soc": 0.26750000000000007,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 360.0,
+      "time_min": 6.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.59896616823545,
+      "ebn0_db": 48.59896616823545,
+      "link_available": true,
+      "soc": 0.8210000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 26.937117999999998,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 360.0,
+      "time_min": 6.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -12.227989256674874,
+        1138.6719318324042,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.07262712930452621,
+        -0.3170304823100697,
+        0.0
+      ],
+      "formation_error_m": 139.21001544210932,
+      "control_acceleration_m_s2": [
+        0.0008255768195697072,
+        -0.00023719477816752654,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.1387375870077359,
+      "link_margin_db": 40.59896616823545,
+      "ebn0_db": 48.59896616823545,
+      "link_available": true,
+      "soc": 0.671,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.468559,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 360.0,
+      "time_min": 6.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        4.896161401534846,
+        -1022.4046350708721,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.017256798621354628,
+        0.07434824155520536,
+        0.0
+      ],
+      "formation_error_m": 22.933383290060654,
+      "control_acceleration_m_s2": [
+        -0.00023597761700153394,
+        -0.00014669323102420024,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.022416358540332,
+      "link_margin_db": 41.53488349583412,
+      "ebn0_db": 49.53488349583412,
+      "link_available": true,
+      "soc": 0.2710000000000001,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 420.0,
+      "time_min": 7.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.745996973714114,
+      "ebn0_db": 48.745996973714114,
+      "link_available": true,
+      "soc": 0.8245000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.0434062,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 420.0,
+      "time_min": 7.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -16.4438792531473,
+        1119.5030223547758,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0681635351050641,
+        -0.3220308564906448,
+        0.0
+      ],
+      "formation_error_m": 120.6290740941757,
+      "control_acceleration_m_s2": [
+        0.0008741858659034587,
+        0.0001861864048296421,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.1196237842357448,
+      "link_margin_db": 40.745996973714114,
+      "ebn0_db": 48.745996973714114,
+      "link_available": true,
+      "soc": 0.6745000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.5217031,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 420.0,
+      "time_min": 7.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        5.819262218477521,
+        -1018.2710186580792,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.013309514290417325,
+        0.06352538240313119,
+        0.0
+      ],
+      "formation_error_m": 19.175347078248148,
+      "control_acceleration_m_s2": [
+        -0.000222861358692889,
+        -0.0001427826860634646,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0182876466164803,
+      "link_margin_db": 41.57002978354426,
+      "ebn0_db": 49.57002978354426,
+      "link_available": true,
+      "soc": 0.2745000000000001,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 480.0,
+      "time_min": 8.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.891983044957556,
+      "ebn0_db": 48.891983044957556,
+      "link_available": true,
+      "soc": 0.8280000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.13906558,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 480.0,
+      "time_min": 8.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -20.318286770567468,
+        1100.7757204528714,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.06069243888144452,
+        -0.30237608590893333,
+        0.0
+      ],
+      "formation_error_m": 102.80359239874012,
+      "control_acceleration_m_s2": [
+        0.0008919052464629056,
+        0.00040349427821403895,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.100963223507411,
+      "link_margin_db": 40.891983044957556,
+      "ebn0_db": 48.891983044957556,
+      "link_available": true,
+      "soc": 0.6780000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.56953279,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 480.0,
+      "time_min": 8.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        6.4929365955385965,
+        -1014.7636203524046,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.008950708497827135,
+        0.05348331190073022,
+        0.0
+      ],
+      "formation_error_m": 16.128320171165356,
+      "control_acceleration_m_s2": [
+        -0.000201464399893389,
+        -0.00013259408815775002,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.014784392576252,
+      "link_margin_db": 41.59996370373729,
+      "ebn0_db": 49.59996370373729,
+      "link_available": true,
+      "soc": 0.27800000000000014,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 540.0,
+      "time_min": 9.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.02811108014558,
+      "ebn0_db": 49.02811108014558,
+      "link_available": true,
+      "soc": 0.8315000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.225159022,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 540.0,
+      "time_min": 9.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -23.64336758219886,
+        1083.585169566696,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.049573833879024934,
+        -0.270885674709423,
+        0.0
+      ],
+      "formation_error_m": 86.86477653295559,
+      "control_acceleration_m_s2": [
+        0.0008688671396209769,
+        0.0004950453450815002,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0838430829854997,
+      "link_margin_db": 41.02811108014558,
+      "ebn0_db": 49.02811108014558,
+      "link_available": true,
+      "soc": 0.6815000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.612579511,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 540.0,
+      "time_min": 9.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        6.909368182802688,
+        -1011.8234040316878,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.004751217749954781,
+        0.04461582827485968,
+        0.0
+      ],
+      "formation_error_m": 13.694241548258796,
+      "control_acceleration_m_s2": [
+        -0.00017619710565569202,
+        -0.00012045854556512142,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.011846994517925,
+      "link_margin_db": 41.62514236561569,
+      "ebn0_db": 49.62514236561569,
+      "link_available": true,
+      "soc": 0.28150000000000014,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 600.0,
+      "time_min": 10.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 39.99573630115353,
+      "ebn0_db": 47.99573630115353,
+      "link_available": true,
+      "soc": 0.8350000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.3026431198,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": true,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 600.0,
+      "time_min": 10.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        73.76650740810153,
+        1218.4021146923262,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.036082483523404166,
+        -0.23551149354822257,
+        0.0
+      ],
+      "formation_error_m": 230.52327717015805,
+      "control_acceleration_m_s2": [
+        -0.0004310693635336932,
+        -0.0009023187927903624,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.2206331187961115,
+      "link_margin_db": 39.99573630115353,
+      "ebn0_db": 47.99573630115353,
+      "link_available": true,
+      "soc": 0.6850000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.6513215599,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 600.0,
+      "time_min": 10.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        7.088189946789932,
+        -1009.3774576260421,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0010491657983372708,
+        0.036996758932918664,
+        0.0
+      ],
+      "formation_error_m": 11.754962707298937,
+      "control_acceleration_m_s2": [
+        -0.0001501571253224968,
+        -0.00010842491894250754,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0094023451529792,
+      "link_margin_db": 41.646153098457816,
+      "ebn0_db": 49.646153098457816,
+      "link_available": true,
+      "soc": 0.28500000000000014,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 660.0,
+      "time_min": 11.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.10843082498266,
+      "ebn0_db": 48.10843082498266,
+      "link_available": true,
+      "soc": 0.8385000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.37237880782,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 660.0,
+      "time_min": 11.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        70.30573225699378,
+        1202.8454711917652,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.08042023973775742,
+        -0.2820727438532779,
+        0.0
+      ],
+      "formation_error_m": 214.68390990291132,
+      "control_acceleration_m_s2": [
+        -0.000390106586123262,
+        -0.000920769705986928,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.2048983872321897,
+      "link_margin_db": 40.10843082498266,
+      "ebn0_db": 48.10843082498266,
+      "link_available": true,
+      "soc": 0.6885000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.68618940391,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 660.0,
+      "time_min": 11.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        7.063990326526757,
+        -1007.3532283843429,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.001997925312283576,
+        0.030544252431614138,
+        0.0
+      ],
+      "formation_error_m": 10.196564470720961,
+      "control_acceleration_m_s2": [
+        -0.00012529640403226655,
+        -9.728945176605596e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.007377995935831,
+      "link_margin_db": 41.66359007901141,
+      "ebn0_db": 49.66359007901141,
+      "link_available": true,
+      "soc": 0.28850000000000015,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 720.0,
+      "time_min": 12.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.24301523252413,
+      "ebn0_db": 48.24301523252413,
+      "link_available": true,
+      "soc": 0.8420000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.435140927038,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 720.0,
+      "time_min": 12.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        64.05301576394866,
+        1184.6424659059642,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.12913797240195923,
+        -0.3236276818895264,
+        0.0
+      ],
+      "formation_error_m": 195.43702065957666,
+      "control_acceleration_m_s2": [
+        -0.00021917167175580516,
+        -0.0009756863114237923,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.1863728591198552,
+      "link_margin_db": 40.24301523252413,
+      "ebn0_db": 48.24301523252413,
+      "link_available": true,
+      "soc": 0.6920000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.717570463519,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 720.0,
+      "time_min": 12.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        6.877128590867813,
+        -1005.6849682573173,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.004356331466781627,
+        0.02511604663663713,
+        0.0
+      ],
+      "formation_error_m": 8.922654411218517,
+      "control_acceleration_m_s2": [
+        -0.00010269192008310326,
+        -8.722900794675031e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0057084817562079,
+      "link_margin_db": 41.6779970301272,
+      "ebn0_db": 49.6779970301272,
+      "link_available": true,
+      "soc": 0.29200000000000015,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 780.0,
+      "time_min": 13.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.39844219810931,
+      "ebn0_db": 48.39844219810931,
+      "link_available": true,
+      "soc": 0.8455000000000001,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.4916268343342,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 780.0,
+      "time_min": 13.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        54.9783994189457,
+        1164.0348725471783,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.174521879648099,
+        -0.3622986506182379,
+        0.0
+      ],
+      "formation_error_m": 173.00307458030383,
+      "control_acceleration_m_s2": [
+        0.0002966070488058779,
+        -0.0003823082459976637,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.1653324885665013,
+      "link_margin_db": 40.39844219810931,
+      "ebn0_db": 48.39844219810931,
+      "link_available": true,
+      "soc": 0.6955000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.7458134171671,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 780.0,
+      "time_min": 13.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        6.567734826872242,
+        -1004.3158176819226,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0060676456862413805,
+        0.02055976940633905,
+        0.0
+      ],
+      "formation_error_m": 7.858843618478869,
+      "control_acceleration_m_s2": [
+        -8.281353104751382e-05,
+        -7.816180161226107e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0043372923410068,
+      "link_margin_db": 41.689847508294676,
+      "ebn0_db": 49.689847508294676,
+      "link_available": true,
+      "soc": 0.2955000000000002,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 840.0,
+      "time_min": 14.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.56525338159405,
+      "ebn0_db": 48.56525338159405,
+      "link_available": true,
+      "soc": 0.8490000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.542464150900777,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 840.0,
+      "time_min": 14.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        43.94647194392364,
+        1142.3209651015552,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.19357893756150163,
+        -0.36108111422239375,
+        0.0
+      ],
+      "formation_error_m": 148.9515005085755,
+      "control_acceleration_m_s2": [
+        0.0006697020616135401,
+        4.222961174804585e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.143165989568823,
+      "link_margin_db": 40.56525338159405,
+      "ebn0_db": 48.56525338159405,
+      "link_available": true,
+      "soc": 0.6990000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.77123207545039,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 840.0,
+      "time_min": 14.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        6.172265658861034,
+        -1003.1976965839349,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.007212572270909861,
+        0.0167359993394924,
+        0.0
+      ],
+      "formation_error_m": 6.951411857059259,
+      "control_acceleration_m_s2": [
+        -6.574473500994178e-05,
+        -6.993406303724151e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0032166841189776,
+      "link_margin_db": 41.69954436374077,
+      "ebn0_db": 49.69954436374077,
+      "link_available": true,
+      "soc": 0.2990000000000002,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.0,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 900.0,
+      "time_min": 15.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.727891929689164,
+      "ebn0_db": 48.727891929689164,
+      "link_available": true,
+      "soc": 0.8525000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.588217735810698,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 900.0,
+      "time_min": 15.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        32.4101549324026,
+        1121.4917694914784,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.19077127356177423,
+        -0.33328687113180144,
+        0.0
+      ],
+      "formation_error_m": 125.74047954780856,
+      "control_acceleration_m_s2": [
+        0.0008779670898461418,
+        0.00023645957922484306,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.121959984660714,
+      "link_margin_db": 40.727891929689164,
+      "ebn0_db": 48.727891929689164,
+      "link_available": true,
+      "soc": 0.7025000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.79410886790535,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 900.0,
+      "time_min": 15.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        5.721887387407682,
+        -1002.2902755023139,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.007886485704207864,
+        0.013526125161954077,
+        0.0
+      ],
+      "formation_error_m": 6.16322619661766,
+      "control_acceleration_m_s2": [
+        -5.134586211449072e-05,
+        -6.240349124935511e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0023066079607468,
+      "link_margin_db": 41.70742741515825,
+      "ebn0_db": 49.70742741515825,
+      "link_available": true,
+      "soc": 0.3025000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.0,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 960.0,
+      "time_min": 16.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 40.87703724171037,
+      "ebn0_db": 48.87703724171037,
+      "link_available": true,
+      "soc": 0.8560000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.62939596222963,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 960.0,
+      "time_min": 16.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        21.467093660136683,
+        1102.6503331595452,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.1735557729624417,
+        -0.2951378508711553,
+        0.0
+      ],
+      "formation_error_m": 104.87100174966723,
+      "control_acceleration_m_s2": [
+        0.0009520827373573786,
+        0.0003058405813918103,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.10285928083644,
+      "link_margin_db": 40.87703724171037,
+      "ebn0_db": 48.87703724171037,
+      "link_available": true,
+      "soc": 0.7060000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.814697981114815,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 960.0,
+      "time_min": 16.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        5.2420448258910355,
+        -1001.5597094799426,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.00818447230102262,
+        0.010832601697399646,
+        0.0
+      ],
+      "formation_error_m": 5.4691615096350805,
+      "control_acceleration_m_s2": [
+        -3.936511810963976e-05,
+        -5.546662398034464e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0015734275066923,
+      "link_margin_db": 41.71378340920995,
+      "ebn0_db": 49.71378340920995,
+      "link_available": true,
+      "soc": 0.3060000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.0,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1020.0,
+      "time_min": 17.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.00916966059077,
+      "ebn0_db": 49.00916966059077,
+      "link_available": true,
+      "soc": 0.8595000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.666456366006667,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1020.0,
+      "time_min": 17.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        11.774548887628653,
+        1086.145390908812,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.14901125669909535,
+        -0.2555641606650502,
+        0.0
+      ],
+      "formation_error_m": 86.94635343899819,
+      "control_acceleration_m_s2": [
+        0.000947865922641838,
+        0.00031866940972477597,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0862092110610937,
+      "link_margin_db": 41.00916966059077,
+      "ebn0_db": 49.00916966059077,
+      "link_available": true,
+      "soc": 0.7095000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.833228183003335,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1020.0,
+      "time_min": 17.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        4.752723247422118,
+        -1000.977455895004,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.008193229128830753,
+        0.008576045973675067,
+        0.0
+      ],
+      "formation_error_m": 4.852195203540843,
+      "control_acceleration_m_s2": [
+        -2.9508631917796345e-05,
+        -4.905924988932e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0009887389917538,
+      "link_margin_db": 41.718855451559165,
+      "ebn0_db": 49.718855451559165,
+      "link_available": true,
+      "soc": 0.3095000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.0,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1080.0,
+      "time_min": 18.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.12400012807568,
+      "ebn0_db": 49.12400012807568,
+      "link_available": true,
+      "soc": 0.8630000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.699810729406,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1080.0,
+      "time_min": 18.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        3.64024408545618,
+        1071.9374738656638,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.12161626400473195,
+        -0.21863273683641732,
+        0.0
+      ],
+      "formation_error_m": 72.02951841554103,
+      "control_acceleration_m_s2": [
+        0.0009001252303287321,
+        0.00031031241737806167,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0719436548879342,
+      "link_margin_db": 41.12400012807568,
+      "ebn0_db": 49.12400012807568,
+      "link_available": true,
+      "soc": 0.7130000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.849905364703,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1080.0,
+      "time_min": 18.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        4.269060227844723,
+        -1000.5192932361057,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.007987506616805421,
+        0.00669154244672791,
+        0.0
+      ],
+      "formation_error_m": 4.300527955266743,
+      "control_acceleration_m_s2": [
+        -2.1481151622451092e-05,
+        -4.314647485170964e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0005284009026958,
+      "link_margin_db": 41.722850866665596,
+      "ebn0_db": 49.722850866665596,
+      "link_available": true,
+      "soc": 0.3130000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.0,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1140.0,
+      "time_min": 19.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.22274789419056,
+      "ebn0_db": 49.22274789419056,
+      "link_available": true,
+      "soc": 0.8665000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.729829656465398,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1140.0,
+      "time_min": 19.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -2.845228067580101,
+        1059.8221809352733,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.09408090026157089,
+        -0.18581309464834317,
+        0.0
+      ],
+      "formation_error_m": 59.88980426257147,
+      "control_acceleration_m_s2": [
+        0.0008095517634441691,
+        0.00029006113848127906,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0598260001175457,
+      "link_margin_db": 41.22274789419056,
+      "ebn0_db": 49.22274789419056,
+      "link_available": true,
+      "soc": 0.7165000000000002,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.864914828232703,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1140.0,
+      "time_min": 19.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        3.802087736892494,
+        -1000.1645540526855,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.007629312855315168,
+        0.005125259049666134,
+        0.0
+      ],
+      "formation_error_m": 3.805647014015292,
+      "control_acceleration_m_s2": [
+        -1.5007251895328537e-05,
+        -3.7710991343619014e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0001717807729662,
+      "link_margin_db": 41.725947345739,
+      "ebn0_db": 49.725947345739,
+      "link_available": true,
+      "soc": 0.3165000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.0,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1200.0,
+      "time_min": 20.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.307267741836128,
+      "ebn0_db": 14.307267741836128,
+      "link_available": true,
+      "soc": 0.8700000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.756846690818858,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": true,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1200.0,
+      "time_min": 20.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -7.756991957007596,
+        1049.5344919737872,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.06920477384574963,
+        -0.15765439537945414,
+        0.0
+      ],
+      "formation_error_m": 50.13817726366079,
+      "control_acceleration_m_s2": [
+        0.0007087780299061489,
+        0.0002705453235598884,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0495631571119943,
+      "link_margin_db": 6.307267741836128,
+      "ebn0_db": 14.307267741836128,
+      "link_available": true,
+      "soc": 0.7200000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.87842334540943,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1200.0,
+      "time_min": 20.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        3.3594761710700127,
+        -999.8955409472991,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0071686291891531785,
+        0.0038317628270644654,
+        0.0
+      ],
+      "formation_error_m": 3.3610997958523052,
+      "control_acceleration_m_s2": [
+        -9.840489908174826e-06,
+        -3.274328367053408e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999011845609724,
+      "link_margin_db": 41.7282976288426,
+      "ebn0_db": 49.7282976288426,
+      "link_available": true,
+      "soc": 0.3200000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.0,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": true,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1260.0,
+      "time_min": 21.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.379519090757427,
+      "ebn0_db": 14.379519090757427,
+      "link_available": true,
+      "soc": 0.8705000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.081162021736972,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1260.0,
+      "time_min": 21.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -11.280964449339614,
+        1040.8077120730964,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.047863445191135806,
+        -0.133705418810495,
+        0.0
+      ],
+      "formation_error_m": 42.33827492409201,
+      "control_acceleration_m_s2": [
+        0.0006085268505158787,
+        0.0002534891090220327,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0408688455659247,
+      "link_margin_db": 6.379519090757427,
+      "ebn0_db": 14.379519090757427,
+      "link_available": true,
+      "soc": 0.7235000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.890581010868488,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1260.0,
+      "time_min": 21.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        2.9462140170707425,
+        -999.6970822310512,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.006644826637981568,
+        0.002772064201975265,
+        0.0
+      ],
+      "formation_error_m": 2.9617454666343317,
+      "control_acceleration_m_s2": [
+        -5.765667237562311e-06,
+        -2.8234868994777315e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9997014236252301,
+      "link_margin_db": 41.730033075116296,
+      "ebn0_db": 49.730033075116296,
+      "link_available": true,
+      "soc": 0.3205000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.3,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1320.0,
+      "time_min": 22.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.441247714207023,
+      "ebn0_db": 14.441247714207023,
+      "link_available": true,
+      "soc": 0.8740000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.073045819563276,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1320.0,
+      "time_min": 22.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -13.635553367755131,
+        1033.4078977483193,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.030261732279628674,
+        -0.11334035279939772,
+        0.0
+      ],
+      "formation_error_m": 36.083458088257814,
+      "control_acceleration_m_s2": [
+        0.000514804925592132,
+        0.00023856486742879516,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0334978526558465,
+      "link_margin_db": 6.441247714207023,
+      "ebn0_db": 14.441247714207023,
+      "link_available": true,
+      "soc": 0.7270000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.90152290978164,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1320.0,
+      "time_min": 22.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        2.565195746070573,
+        -999.5561868705214,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.006088298470387458,
+        0.0019122677233153638,
+        0.0
+      ],
+      "formation_error_m": 2.603305458365605,
+      "control_acceleration_m_s2": [
+        -2.5975271583118036e-06,
+        -2.4174404376094888e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.999559478440554,
+      "link_margin_db": 41.73126645111995,
+      "ebn0_db": 49.73126645111995,
+      "link_available": true,
+      "soc": 0.32400000000000034,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.27,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1380.0,
+      "time_min": 23.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.493929362660623,
+      "ebn0_db": 14.493929362660623,
+      "link_available": true,
+      "soc": 0.8775000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.06574123760695,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1380.0,
+      "time_min": 23.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -15.039611931367471,
+        1027.1383527335734,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.016210088704252557,
+        -0.09595206759038602,
+        0.0
+      ],
+      "formation_error_m": 31.027086813588852,
+      "control_acceleration_m_s2": [
+        0.0004304729482613699,
+        0.000224849486051621,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0272484536777289,
+      "link_margin_db": 6.493929362660623,
+      "ebn0_db": 14.493929362660623,
+      "link_available": true,
+      "soc": 0.7305000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.911370618803478,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1380.0,
+      "time_min": 23.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        2.217712962805965,
+        -999.4617669967852,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.005522046198454404,
+        0.0012226682287256603,
+        0.0
+      ],
+      "formation_error_m": 2.282092362536465,
+      "control_acceleration_m_s2": [
+        -1.7788966848406729e-07,
+        -2.0546005894101833e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9994642274434445,
+      "link_margin_db": 41.73209419483004,
+      "ebn0_db": 49.73209419483004,
+      "link_available": true,
+      "soc": 0.32750000000000035,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.243,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1440.0,
+      "time_min": 24.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.538789762052986,
+      "ebn0_db": 14.538789762052986,
+      "link_available": true,
+      "soc": 0.8810000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.059167113846254,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1440.0,
+      "time_min": 24.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -15.694578115742953,
+        1021.8361342740086,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.005318973815740091,
+        -0.08102695343390218,
+        0.0
+      ],
+      "formation_error_m": 26.891198230344642,
+      "control_acceleration_m_s2": [
+        0.00035644335284077983,
+        0.00021149294199104536,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0219566551915404,
+      "link_margin_db": 6.538789762052986,
+      "ebn0_db": 14.538789762052986,
+      "link_available": true,
+      "soc": 0.7340000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.92023355692313,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1440.0,
+      "time_min": 24.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        1.9038553678363876,
+        -999.4044055837527,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0049630965222742405,
+        0.0006771453374092478,
+        0.0
+      ],
+      "formation_error_m": 1.9948428435103351,
+      "control_acceleration_m_s2": [
+        1.6276648214661653e-06,
+        -1.7329051024220157e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9994062189947968,
+      "link_margin_db": 41.73259833453962,
+      "ebn0_db": 49.73259833453962,
+      "link_available": true,
+      "soc": 0.33100000000000035,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.2187,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1500.0,
+      "time_min": 25.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.576851118495227,
+      "ebn0_db": 14.576851118495227,
+      "link_available": true,
+      "soc": 0.8845000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.05325040246163,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1500.0,
+      "time_min": 25.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -15.77623925337561,
+        1017.3659501124345,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.002875669455671399,
+        -0.06815856781790297,
+        0.0
+      ],
+      "formation_error_m": 23.462010746892773,
+      "control_acceleration_m_s2": [
+        0.000292519429422141,
+        0.00019794954029453453,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.017488263408063,
+      "link_margin_db": 6.576851118495227,
+      "ebn0_db": 14.576851118495227,
+      "link_available": true,
+      "soc": 0.7375000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.928210201230815,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1500.0,
+      "time_min": 25.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        1.6228329557582533,
+        -999.3761547895956,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.004423708650472397,
+        0.0002527422659061557,
+        0.0
+      ],
+      "formation_error_m": 1.7386114139851883,
+      "control_acceleration_m_s2": [
+        2.9330100886141013e-06,
+        -1.449884233533719e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9993774724041162,
+      "link_margin_db": 41.73284817619603,
+      "ebn0_db": 49.73284817619603,
+      "link_available": true,
+      "soc": 0.33450000000000035,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.19683,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1560.0,
+      "time_min": 26.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.608979979787165,
+      "ebn0_db": 14.608979979787165,
+      "link_available": true,
+      "soc": 0.8880000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.047925362215466,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1560.0,
+      "time_min": 26.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -15.432492281666523,
+        1013.6140805241325,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.008838413021142938,
+        -0.05703428005820061,
+        0.0
+      ],
+      "formation_error_m": 20.579237268209468,
+      "control_acceleration_m_s2": [
+        0.00023794254146418698,
+        0.00018399262998295421,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0137315552229822,
+      "link_margin_db": 6.608979979787165,
+      "ebn0_db": 14.608979979787165,
+      "link_available": true,
+      "soc": 0.7410000000000003,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.935389181107734,
+      "cognitive_action": "RECUPERAR_FORMACION",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1560.0,
+      "time_min": 26.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        1.3732319834485365,
+        -999.3703562774137,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.003912374723485245,
+        -7.065015771005374e-05,
+        0.0
+      ],
+      "formation_error_m": 1.5107009292902,
+      "control_acceleration_m_s2": [
+        3.834358118911232e-06,
+        -1.202767319004461e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.999371299754063,
+      "link_margin_db": 41.73290182471642,
+      "ebn0_db": 49.73290182471642,
+      "link_available": true,
+      "soc": 0.33800000000000036,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.177146999999998,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1620.0,
+      "time_min": 27.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.635926253612141,
+      "ebn0_db": 14.63592625361214,
+      "link_available": true,
+      "soc": 0.8915000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.04313282599392,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1620.0,
+      "time_min": 27.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -14.784487983372614,
+        1010.4833736136128,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.01299560532831988,
+        -0.04741362317695138,
+        0.0
+      ],
+      "formation_error_m": 18.124078107674393,
+      "control_acceleration_m_s2": [
+        0.00019172491704089325,
+        0.0001696415131433551,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0105915245213957,
+      "link_margin_db": 6.635926253612141,
+      "ebn0_db": 14.63592625361214,
+      "link_available": true,
+      "soc": 0.7445000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.94185026299696,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1620.0,
+      "time_min": 27.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        1.1532164726759249,
+        -999.381478714291,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0034346356584028814,
+        -0.00031055416112027705,
+        0.0
+      ],
+      "formation_error_m": 1.3086163737804173,
+      "control_acceleration_m_s2": [
+        4.412755813704552e-06,
+        -9.885992425217658e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9993821440797287,
+      "link_margin_db": 41.732807573355686,
+      "ebn0_db": 49.732807573355686,
+      "link_available": true,
+      "soc": 0.3415000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.1594323,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1680.0,
+      "time_min": 28.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.658351164667039,
+      "ebn0_db": 14.658351164667039,
+      "link_available": true,
+      "soc": 0.8950000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.038819543394528,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1680.0,
+      "time_min": 28.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -13.929426917601749,
+        1007.8895311059246,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.015718977108114353,
+        -0.03910741461569033,
+        0.0
+      ],
+      "formation_error_m": 16.008548820057346,
+      "control_acceleration_m_s2": [
+        0.00015283672148712018,
+        0.00015506869480703145,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0079857815699451,
+      "link_margin_db": 6.658351164667039,
+      "ebn0_db": 14.658351164667039,
+      "link_available": true,
+      "soc": 0.7480000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.947665236697265,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1680.0,
+      "time_min": 28.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.9606854746443413,
+        -999.4049699983453,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0029937409059511066,
+        -0.00048213871011348175,
+        0.0
+      ],
+      "formation_error_m": 1.130034195970092,
+      "control_acceleration_m_s2": [
+        4.736217754722023e-06,
+        -8.043490352185415e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9994054317312743,
+      "link_margin_db": 41.73260517668912,
+      "ebn0_db": 49.73260517668912,
+      "link_available": true,
+      "soc": 0.3450000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.143489069999998,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1740.0,
+      "time_min": 29.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.676845545095603,
+      "ebn0_db": 14.676845545095603,
+      "link_available": true,
+      "soc": 0.8985000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.034937589055076,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1740.0,
+      "time_min": 29.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -12.943944827408558,
+        1005.7585272198494,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.01732227165740685,
+        -0.031961151209784704,
+        0.0
+      ],
+      "formation_error_m": 14.167086624876092,
+      "control_acceleration_m_s2": [
+        0.00012030072328891639,
+        0.00014051866528128995,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.005841816978761,
+      "link_margin_db": 6.676845545095603,
+      "ebn0_db": 14.676845545095603,
+      "link_available": true,
+      "soc": 0.7515000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.952898713027537,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1740.0,
+      "time_min": 29.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.7933946264327764,
+        -999.4371230316636,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.002591179962070197,
+        -0.0005984401627946391,
+        0.0
+      ],
+      "formation_error_m": 0.972782357331757,
+      "control_acceleration_m_s2": [
+        4.861547167906046e-06,
+        -6.470018064369976e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.999437437946389,
+      "link_margin_db": 41.73232701330123,
+      "ebn0_db": 49.73232701330123,
+      "link_available": true,
+      "soc": 0.3485000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.129140163,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1800.0,
+      "time_min": 30.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.691941014593439,
+      "ebn0_db": 14.69194101459344,
+      "link_available": true,
+      "soc": 0.9020000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.03144383014957,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": true,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1800.0,
+      "time_min": 30.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -11.887492631604895,
+        1004.0248817688779,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.018064688351350982,
+        -0.02584328908164147,
+        0.0
+      ],
+      "formation_error_m": 12.550384628365231,
+      "control_acceleration_m_s2": [
+        9.323234582129007e-05,
+        0.00012624867727557398,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0040952523003361,
+      "link_margin_db": 6.691941014593439,
+      "ebn0_db": 14.69194101459344,
+      "link_available": true,
+      "soc": 0.7550000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.957608841724785,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": true,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1800.0,
+      "time_min": 30.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.6490489609086387,
+        -999.4749544306466,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0022271099368111375,
+        -0.0006705751374944473,
+        0.0
+      ],
+      "formation_error_m": 0.8348277687968095,
+      "control_acceleration_m_s2": [
+        4.835900276316326e-06,
+        -5.136310287113177e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9994751651735507,
+      "link_margin_db": 41.73199914050579,
+      "ebn0_db": 49.73199914050579,
+      "link_available": true,
+      "soc": 0.18,
+      "energy_mode": "CRITICO",
+      "temperature_c": 28.1162261467,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1860.0,
+      "time_min": 31.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.704116563343746,
+      "ebn0_db": 14.704116563343746,
+      "link_available": true,
+      "soc": 0.9025000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.32829944713461,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1860.0,
+      "time_min": 31.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -10.805418248624813,
+        1002.6305122314649,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.018157296710754705,
+        -0.02063772978900979,
+        0.0
+      ],
+      "formation_error_m": 11.121000770056643,
+      "control_acceleration_m_s2": [
+        7.084999128645862e-05,
+        0.00011249159368278076,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0026887359101315,
+      "link_margin_db": 6.704116563343746,
+      "ebn0_db": 14.704116563343746,
+      "link_available": true,
+      "soc": 0.7555000000000004,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.261847957552305,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1860.0,
+      "time_min": 31.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.5253726006213143,
+        -999.5160957359665,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0019006991918067682,
+        -0.000707946135736351,
+        0.0
+      ],
+      "formation_error_m": 0.7142686513024576,
+      "control_acceleration_m_s2": [
+        4.698141522027859e-06,
+        -4.014516194779723e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9995162338109568,
+      "link_margin_db": 41.73164224286998,
+      "ebn0_db": 49.73164224286998,
+      "link_available": true,
+      "soc": 0.1835,
+      "energy_mode": "CRITICO",
+      "temperature_c": 28.10460353203,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1920.0,
+      "time_min": 32.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.713802530788982,
+      "ebn0_db": 14.713802530788982,
+      "link_available": true,
+      "soc": 0.9060000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.29546950242115,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1920.0,
+      "time_min": 32.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -9.731638541532563,
+        1001.5239433663244,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.017770231259230922,
+        -0.016239433096572088,
+        0.0
+      ],
+      "formation_error_m": 9.850238174115695,
+      "control_acceleration_m_s2": [
+        5.247092075680388e-05,
+        9.943659744608923e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0015712225921507,
+      "link_margin_db": 6.713802530788982,
+      "ebn0_db": 14.713802530788982,
+      "link_available": true,
+      "soc": 0.7590000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.235663161797074,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1920.0,
+      "time_min": 32.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.42015988575328134,
+        -999.5586966511779,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0016104030422385749,
+        -0.0007184383613624128,
+        0.0
+      ],
+      "formation_error_m": 0.6093299395875774,
+      "control_acceleration_m_s2": [
+        4.480026622842973e-06,
+        -3.0785600855424784e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9995587849573087,
+      "link_margin_db": 41.73127247729563,
+      "ebn0_db": 49.73127247729563,
+      "link_available": true,
+      "soc": 0.187,
+      "energy_mode": "CRITICO",
+      "temperature_c": 28.094143178827,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1980.0,
+      "time_min": 33.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.721383358925408,
+      "ebn0_db": 14.721383358925408,
+      "link_available": true,
+      "soc": 0.9095000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.265922552179035,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 1980.0,
+      "time_min": 33.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -8.690888818806506,
+        1000.659717366661,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.017039547744454365,
+        -0.012552112159416364,
+        0.0
+      ],
+      "formation_error_m": 8.715892120989682,
+      "control_acceleration_m_s2": [
+        3.750139442049524e-05,
+        8.722254994211152e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0006974575308896,
+      "link_margin_db": 6.721383358925408,
+      "ebn0_db": 14.721383358925408,
+      "link_available": true,
+      "soc": 0.7625000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.212096845617367,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 1980.0,
+      "time_min": 33.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.3313116275125594,
+        -999.6013397262838,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0013541841689583937,
+        -0.0007086056101078043,
+        0.0
+      ],
+      "formation_error_m": 0.5183603074739932,
+      "control_acceleration_m_s2": [
+        4.207240801415961e-06,
+        -2.304360593462479e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9996013946318681,
+      "link_margin_db": 41.730902218889554,
+      "ebn0_db": 49.730902218889554,
+      "link_available": true,
+      "soc": 0.19050000000000003,
+      "energy_mode": "CRITICO",
+      "temperature_c": 28.0847288609443,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2040.0,
+      "time_min": 34.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 6.727199963099977,
+      "ebn0_db": 14.727199963099977,
+      "link_available": true,
+      "soc": 0.9130000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.239330296961132,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2040.0,
+      "time_min": 34.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -7.700584996555769,
+        999.9979043695557,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.01607326483902078,
+        -0.009487175338400627,
+        0.0
+      ],
+      "formation_error_m": 7.700585281707278,
+      "control_acceleration_m_s2": [
+        2.5425581218949144e-05,
+        7.593931531609049e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0000275534967986,
+      "link_margin_db": 6.727199963099977,
+      "ebn0_db": 14.727199963099977,
+      "link_available": true,
+      "soc": 0.7660000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.19088716105563,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": [
+        "ADD_LINK_LOSS_DB"
+      ]
+    },
+    {
+      "time_s": 2040.0,
+      "time_min": 34.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.25685949934526353,
+        -999.6429657803088,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0011296877581361306,
+        -0.0006838433379089013,
+        0.0
+      ],
+      "formation_error_m": 0.4398297812044835,
+      "control_acceleration_m_s2": [
+        3.900312078183773e-06,
+        -1.6699376905522384e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9996429987804917,
+      "link_margin_db": 41.730540713268056,
+      "ebn0_db": 49.730540713268056,
+      "link_available": true,
+      "soc": 0.19400000000000003,
+      "energy_mode": "CRITICO",
+      "temperature_c": 28.076255974849868,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2100.0,
+      "time_min": 35.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.730194642026035,
+      "ebn0_db": 49.730194642026035,
+      "link_available": true,
+      "soc": 0.9165000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.21539726726502,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2100.0,
+      "time_min": 35.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -6.772351250069084,
+        999.5036562522362,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.014956470526559199,
+        -0.0069633210158147486,
+        0.0
+      ],
+      "formation_error_m": 6.790515339078215,
+      "control_acceleration_m_s2": [
+        1.5795260788908095e-05,
+        6.56334430817946e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9995265997476218,
+      "link_margin_db": 41.7315521623771,
+      "ebn0_db": 49.7315521623771,
+      "link_available": true,
+      "soc": 0.7695000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.171798444950067,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2100.0,
+      "time_min": 35.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.19498103816707363,
+        -999.6828092592918,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.000934379389007219,
+        -0.0006485475885876424,
+        0.0
+      ],
+      "formation_error_m": 0.3723272367631713,
+      "control_acceleration_m_s2": [
+        3.5754143487162787e-06,
+        -1.1554341054619857e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9996828282741256,
+      "link_margin_db": 41.730194642026035,
+      "ebn0_db": 49.730194642026035,
+      "link_available": true,
+      "soc": 0.19750000000000006,
+      "energy_mode": "CRITICO",
+      "temperature_c": 28.068630377364883,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2160.0,
+      "time_min": 36.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.729868608783505,
+      "ebn0_db": 49.729868608783505,
+      "link_available": true,
+      "soc": 0.9200000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.193857540538517,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2160.0,
+      "time_min": 36.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -5.913267872430415,
+        999.1467760093318,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.013755546257505944,
+        -0.004906404102913422,
+        0.0
+      ],
+      "formation_error_m": 5.974506515970126,
+      "control_acceleration_m_s2": [
+        8.220987388560765e-06,
+        5.6315712636671346e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9991642741545421,
+      "link_margin_db": 41.73470134386395,
+      "ebn0_db": 49.73470134386395,
+      "link_available": true,
+      "soc": 0.7730000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.15461860045506,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2160.0,
+      "time_min": 36.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.14400729250689304,
+        -999.720342665291,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0007656521890843113,
+        -0.0006062591059875604,
+        0.0
+      ],
+      "formation_error_m": 0.3145573479537551,
+      "control_acceleration_m_s2": [
+        3.2450716625366292e-06,
+        -7.430738462792396e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9997203530372417,
+      "link_margin_db": 41.729868608783505,
+      "ebn0_db": 49.729868608783505,
+      "link_available": true,
+      "soc": 0.20100000000000007,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.061767339628396,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2220.0,
+      "time_min": 37.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72956555352377,
+      "ebn0_db": 49.72956555352377,
+      "link_available": true,
+      "soc": 0.9235000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.174471786484666,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2220.0,
+      "time_min": 37.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -5.126888718659063,
+        998.901293084514,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.012521630423536025,
+        -0.003249354402993869,
+        0.0
+      ],
+      "formation_error_m": 5.243295225299669,
+      "control_acceleration_m_s2": [
+        2.3647309848930787e-06,
+        4.796897353367078e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9989144499474655,
+      "link_margin_db": 41.736873375903244,
+      "ebn0_db": 49.736873375903244,
+      "link_available": true,
+      "soc": 0.7765000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.139156740409554,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2220.0,
+      "time_min": 37.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.10242479816885161,
+        -999.7552291681906,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0006209086392331507,
+        -0.0005597925367431598,
+        0.0
+      ],
+      "formation_error_m": 0.2653367659873235,
+      "control_acceleration_m_s2": [
+        2.9187731504881727e-06,
+        -4.170763422433777e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9997552344148944,
+      "link_margin_db": 41.72956555352377,
+      "ebn0_db": 49.72956555352377,
+      "link_available": true,
+      "soc": 0.20450000000000007,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.055590605665557,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2280.0,
+      "time_min": 38.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72928710292351,
+      "ebn0_db": 49.72928710292351,
+      "link_available": true,
+      "soc": 0.9270000000000006,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.1570246078362,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2280.0,
+      "time_min": 38.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -4.414069875635009,
+        998.7450449010261,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.011293455391970263,
+        -0.001932037907129981,
+        0.0
+      ],
+      "formation_error_m": 4.58900045406722,
+      "control_acceleration_m_s2": [
+        -2.0662456230619052e-06,
+        4.05554052365186e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9987547991009703,
+      "link_margin_db": 41.73826170346237,
+      "ebn0_db": 49.73826170346237,
+      "link_available": true,
+      "soc": 0.7800000000000006,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.1252410663686,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2280.0,
+      "time_min": 38.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.06887326608992031,
+        -999.7872825197747,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0004976215312790787,
+        -0.0005113510927724985,
+        0.0
+      ],
+      "formation_error_m": 0.2235894746522588,
+      "control_acceleration_m_s2": [
+        2.603506928434224e-06,
+        -1.6354086232503576e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9997872848920427,
+      "link_margin_db": 41.72928710292351,
+      "ebn0_db": 49.72928710292351,
+      "link_available": true,
+      "soc": 0.2080000000000001,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.050031545099003,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2340.0,
+      "time_min": 39.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72903386412506,
+      "ebn0_db": 49.72903386412506,
+      "link_available": true,
+      "soc": 0.9305000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.14132214705258,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2340.0,
+      "time_min": 39.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -3.773643492602976,
+        998.6592692790648,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.010099679464600242,
+        -0.0009010215483241212,
+        0.0
+      ],
+      "formation_error_m": 4.0047402007276585,
+      "control_acceleration_m_s2": [
+        -5.324565864742425e-06,
+        3.402278680529694e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.998666399005296,
+      "link_margin_db": 41.73903052826131,
+      "ebn0_db": 49.73903052826131,
+      "link_available": true,
+      "soc": 0.7835000000000005,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.11271695973174,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2340.0,
+      "time_min": 39.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.04214011843900438,
+        -999.8164334212742,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0003933778794626656,
+        -0.00046262737764472627,
+        0.0
+      ],
+      "formation_error_m": 0.18834138792937982,
+      "control_acceleration_m_s2": [
+        2.3042206669212374e-06,
+        2.9687446640911605e-08,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.999816434309332,
+      "link_margin_db": 41.72903386412506,
+      "ebn0_db": 49.72903386412506,
+      "link_available": true,
+      "soc": 0.2115000000000001,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.045028390589103,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2400.0,
+      "time_min": 40.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72880566898789,
+      "ebn0_db": 49.72880566898789,
+      "link_available": true,
+      "soc": 0.9340000000000006,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.12718993234732,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": true,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2400.0,
+      "time_min": 40.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -3.202964052551989,
+        998.6282136079675,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.008960813595442969,
+        -0.00010924108402755124,
+        0.0
+      ],
+      "formation_error_m": 3.4843617245208365,
+      "control_acceleration_m_s2": [
+        -7.627227712503964e-06,
+        2.8309656512870498e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.998633350130348,
+      "link_margin_db": 41.73931797523126,
+      "ebn0_db": 49.73931797523126,
+      "link_available": true,
+      "soc": 0.7870000000000006,
+      "energy_mode": "NORMAL",
+      "temperature_c": 28.101445263758563,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": true,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2400.0,
+      "time_min": 40.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.021152798606810033,
+        -999.8427015440542,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0003059090100207525,
+        -0.00041489130084135467,
+        0.0
+      ],
+      "formation_error_m": 0.15871435074319856,
+      "control_acceleration_m_s2": [
+        2.0242161080298194e-06,
+        1.731612878147095e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9998427017678098,
+      "link_margin_db": 41.72880566898789,
+      "ebn0_db": 49.72880566898789,
+      "link_available": true,
+      "soc": 0.21500000000000014,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 28.04052555153019,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2460.0,
+      "time_min": 41.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72860177534167,
+      "ebn0_db": 49.72860177534167,
+      "link_available": true,
+      "soc": 0.9258128654970766,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.81447093911259,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2460.0,
+      "time_min": 41.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -2.698349019038151,
+        998.6387660795509,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.007890821002238434,
+        0.0004844093177900522,
+        0.0
+      ],
+      "formation_error_m": 3.0222582971555103,
+      "control_acceleration_m_s2": [
+        -9.159587637144455e-06,
+        2.33494038666612e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9986424115789979,
+      "link_margin_db": 41.73923916113414,
+      "ebn0_db": 49.73923916113414,
+      "link_available": true,
+      "soc": 0.7788128654970766,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.791300737382706,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2460.0,
+      "time_min": 41.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        0.004969602189433302,
+        -999.8661724620149,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.00023310956533576353,
+        -0.00036906612984373476,
+        0.0
+      ],
+      "formation_error_m": 0.13391977773680097,
+      "control_acceleration_m_s2": [
+        1.765484478897442e-06,
+        2.7597827904790995e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.999866172474365,
+      "link_margin_db": 41.72860177534167,
+      "ebn0_db": 49.72860177534167,
+      "link_available": true,
+      "soc": 0.21032163742690071,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 27.436472996377173,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2520.0,
+      "time_min": 42.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72842103119642,
+      "ebn0_db": 49.72842103119642,
+      "link_available": true,
+      "soc": 0.9211345029239771,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.23302384520133,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2520.0,
+      "time_min": 42.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -2.2554316554381812,
+        998.680112967055,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.006898449462425221,
+        0.0009155407024701993,
+        0.0
+      ],
+      "formation_error_m": 2.6132496497825977,
+      "control_acceleration_m_s2": [
+        -1.007896259063814e-05,
+        1.9073415039137646e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9986826598113347,
+      "link_margin_db": 41.73888910123726,
+      "ebn0_db": 49.73888910123726,
+      "link_available": true,
+      "soc": 0.7741345029239771,
+      "energy_mode": "NORMAL",
+      "temperature_c": 27.212170663644436,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2520.0,
+      "time_min": 42.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.007230375304773971,
+        -999.8869788186179,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.00017304773862007364,
+        -0.0003257937842741968,
+        0.0
+      ],
+      "formation_error_m": 0.11325222191223762,
+      "control_acceleration_m_s2": [
+        1.5289894150560686e-06,
+        3.45926646551107e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9998869788447601,
+      "link_margin_db": 41.72842103119642,
+      "ebn0_db": 49.72842103119642,
+      "link_available": true,
+      "soc": 0.2056432748538013,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 26.892825696739457,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2580.0,
+      "time_min": 43.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72826200727987,
+      "ebn0_db": 49.72826200727987,
+      "link_available": true,
+      "soc": 0.9164561403508777,
+      "energy_mode": "NORMAL",
+      "temperature_c": 26.709721460681198,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2580.0,
+      "time_min": 43.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -1.869440653426622,
+        998.7434244298906,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.005988341963735033,
+        0.001214761416332485,
+        0.0
+      ],
+      "formation_error_m": 2.2525076071080923,
+      "control_acceleration_m_s2": [
+        -1.0517922641347825e-05,
+        1.5413420071527364e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9987451740310445,
+      "link_margin_db": 41.738345410392284,
+      "ebn0_db": 49.738345410392284,
+      "link_available": true,
+      "soc": 0.7694561403508777,
+      "energy_mode": "NORMAL",
+      "temperature_c": 26.690953597279993,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2580.0,
+      "time_min": 43.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.016157706121344245,
+        -999.9052851175499,
+        0.0
+      ],
+      "velocity_m_s": [
+        -0.0001239686886813137,
+        -0.000285490478896709,
+        0.0
+      ],
+      "formation_error_m": 0.09608319532909554,
+      "control_acceleration_m_s2": [
+        1.3149036318773945e-06,
+        3.8962618217070715e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.999905285248098,
+      "link_margin_db": 41.72826200727987,
+      "ebn0_db": 49.72826200727987,
+      "link_available": true,
+      "soc": 0.20096491228070187,
+      "energy_mode": "AHORRO_ENERGIA",
+      "temperature_c": 26.40354312706551,
+      "cognitive_action": "AHORRO_ENERGIA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2640.0,
+      "time_min": 44.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72812310269454,
+      "ebn0_db": 49.72812310269454,
+      "link_available": true,
+      "soc": 0.9117777777777784,
+      "energy_mode": "NORMAL",
+      "temperature_c": 26.238749314613077,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2640.0,
+      "time_min": 44.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -1.5354187804181272,
+        998.8215699405068,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.005161961106751927,
+        0.0014081764996005414,
+        0.0
+      ],
+      "formation_error_m": 1.93551239633792,
+      "control_acceleration_m_s2": [
+        -1.0587313245652872e-05,
+        1.2303189193059001e-05,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.998822750085945,
+      "link_margin_db": 41.73767077295581,
+      "ebn0_db": 49.73767077295581,
+      "link_available": true,
+      "soc": 0.7647777777777783,
+      "energy_mode": "NORMAL",
+      "temperature_c": 26.221858237551995,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2640.0,
+      "time_min": 44.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.02242315265741461,
+        -999.9212755912381,
+        0.0
+      ],
+      "velocity_m_s": [
+        -8.42927637670742e-05,
+        -0.00024839378933806834,
+        0.0
+      ],
+      "formation_error_m": 0.081855545383367,
+      "control_acceleration_m_s2": [
+        1.1228051632848858e-06,
+        4.1266213946654434e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999212758426568,
+      "link_margin_db": 41.72812310269454,
+      "ebn0_db": 49.72812310269454,
+      "link_available": true,
+      "soc": 0.19628654970760243,
+      "energy_mode": "CRITICO",
+      "temperature_c": 25.96318881435896,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2700.0,
+      "time_min": 45.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.728002627932995,
+      "ebn0_db": 49.728002627932995,
+      "link_available": true,
+      "soc": 0.9070994152046788,
+      "energy_mode": "NORMAL",
+      "temperature_c": 25.814874383151768,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2700.0,
+      "time_min": 45.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -1.2483908542988729,
+        998.9088632957361,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.00441835541339632,
+        0.001517877903113611,
+        0.0
+      ],
+      "formation_error_m": 1.6580286585246418,
+      "control_acceleration_m_s2": [
+        -1.0379026221193104e-05,
+        9.679710860369739e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9989096433864799,
+      "link_margin_db": 41.736915170632216,
+      "ebn0_db": 49.736915170632216,
+      "link_available": true,
+      "soc": 0.7600994152046788,
+      "energy_mode": "NORMAL",
+      "temperature_c": 25.799672413796795,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2700.0,
+      "time_min": 45.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.02654797322924489,
+        -999.9351446640039,
+        0.0
+      ],
+      "velocity_m_s": [
+        -5.26098834621826e-05,
+        -0.00021460215838819057,
+        0.0
+      ],
+      "formation_error_m": 0.07007859508968507,
+      "control_acceleration_m_s2": [
+        9.518385322823586e-07,
+        4.1971054718409437e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999351450164242,
+      "link_margin_db": 41.728002627932995,
+      "ebn0_db": 49.728002627932995,
+      "link_available": true,
+      "soc": 0.191608187134503,
+      "energy_mode": "CRITICO",
+      "temperature_c": 25.566869932923066,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2760.0,
+      "time_min": 46.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72789886896902,
+      "ebn0_db": 49.72789886896902,
+      "link_available": true,
+      "soc": 0.9024210526315795,
+      "energy_mode": "NORMAL",
+      "temperature_c": 25.43338694483659,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2760.0,
+      "time_min": 46.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -1.0034898212348653,
+        999.0008363207759,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0037547906277055057,
+        0.0015624136479144258,
+        0.0
+      ],
+      "formation_error_m": 1.4160931746190546,
+      "control_acceleration_m_s2": [
+        -9.968528596946738e-06,
+        7.483964401167101e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9990013403201374,
+      "link_margin_db": 41.73611786839707,
+      "ebn0_db": 49.73611786839707,
+      "link_available": true,
+      "soc": 0.7554210526315794,
+      "energy_mode": "NORMAL",
+      "temperature_c": 25.419705172417117,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2760.0,
+      "time_min": 46.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.028973813449654613,
+        -999.9470895854539,
+        0.0
+      ],
+      "velocity_m_s": [
+        -2.7671184178412982e-05,
+        -0.00018410779086022516,
+        0.0
+      ],
+      "formation_error_m": 0.060324073413974125,
+      "control_acceleration_m_s2": [
+        8.008457424203963e-07,
+        4.146540359599897e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999470900052171,
+      "link_margin_db": 41.72789886896902,
+      "ebn0_db": 49.72789886896902,
+      "link_available": true,
+      "soc": 0.18692982456140358,
+      "energy_mode": "CRITICO",
+      "temperature_c": 25.21018293963076,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2820.0,
+      "time_min": 47.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72781013566252,
+      "ebn0_db": 49.72781013566252,
+      "link_available": true,
+      "soc": 0.8977426900584801,
+      "energy_mode": "NORMAL",
+      "temperature_c": 25.090048250352933,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2820.0,
+      "time_min": 47.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -0.7960484393622796,
+        999.0940397783128,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.003167265488294623,
+        0.0015572280324662956,
+        0.0
+      ],
+      "formation_error_m": 1.2060087234720502,
+      "control_acceleration_m_s2": [
+        -9.417155119111388e-06,
+        5.661380174014108e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9990943569121321,
+      "link_margin_db": 41.73530916653732,
+      "ebn0_db": 49.73530916653732,
+      "link_available": true,
+      "soc": 0.75074269005848,
+      "energy_mode": "NORMAL",
+      "temperature_c": 25.077734655175405,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2820.0,
+      "time_min": 47.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.030072045469629733,
+        -999.9573048641346,
+        0.0
+      ],
+      "velocity_m_s": [
+        -8.378823636170778e-06,
+        -0.0001568238078311166,
+        0.0
+      ],
+      "formation_error_m": 0.052222624841094786,
+      "control_acceleration_m_s2": [
+        6.68471498481961e-07,
+        4.0068774534063117e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999573053163179,
+      "link_margin_db": 41.72781013566252,
+      "ebn0_db": 49.72781013566252,
+      "link_available": true,
+      "soc": 0.18225146198830414,
+      "energy_mode": "CRITICO",
+      "temperature_c": 24.889164645667684,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2880.0,
+      "time_min": 48.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72773479727675,
+      "ebn0_db": 49.72773479727675,
+      "link_available": true,
+      "soc": 0.8930643274853806,
+      "energy_mode": "NORMAL",
+      "temperature_c": 24.78104342531764,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2880.0,
+      "time_min": 48.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -0.6216629859693166,
+        999.1858696157778,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.002650928775322534,
+        0.0015150681907686444,
+        0.0
+      ],
+      "formation_error_m": 1.024340349023701,
+      "control_acceleration_m_s2": [
+        -8.774170483193939e-06,
+        4.162062158293912e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9991860630056378,
+      "link_margin_db": 41.73451193207519,
+      "ebn0_db": 49.73451193207519,
+      "link_available": true,
+      "soc": 0.7460643274853805,
+      "energy_mode": "NORMAL",
+      "temperature_c": 24.769961189657863,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2880.0,
+      "time_min": 48.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.030152465665486478,
+        -999.9659781812134,
+        0.0
+      ],
+      "velocity_m_s": [
+        6.225340167290886e-06,
+        -0.00013260645123905777,
+        0.0
+      ],
+      "formation_error_m": 0.04546048107157903,
+      "control_acceleration_m_s2": [
+        5.532465919714026e-07,
+        3.8041523417963746e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999659786358144,
+      "link_margin_db": 41.72773479727675,
+      "ebn0_db": 49.72773479727675,
+      "link_available": true,
+      "soc": 0.17757309941520472,
+      "energy_mode": "CRITICO",
+      "temperature_c": 24.600248181100916,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2940.0,
+      "time_min": 49.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72767130751137,
+      "ebn0_db": 49.72767130751137,
+      "link_available": true,
+      "soc": 0.8883859649122812,
+      "energy_mode": "NORMAL",
+      "temperature_c": 24.502939082785876,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2940.0,
+      "time_min": 49.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -0.47623446338106645,
+        999.2744164734759,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.002200412329499403,
+        0.0014463547359642906,
+        0.0
+      ],
+      "formation_error_m": 0.867911699468932,
+      "control_acceleration_m_s2": [
+        -8.078609368373896e-06,
+        2.940832642768338e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9992745299554421,
+      "link_margin_db": 41.73374292600539,
+      "ebn0_db": 49.73374292600539,
+      "link_available": true,
+      "soc": 0.7413859649122811,
+      "energy_mode": "NORMAL",
+      "temperature_c": 24.492965070692076,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 2940.0,
+      "time_min": 49.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.029471299714177942,
+        -999.9732875089243,
+        0.0
+      ],
+      "velocity_m_s": [
+        1.6971632649641507e-05,
+        -0.00011127305043283888,
+        0.0
+      ],
+      "formation_error_m": 0.0397758052880608,
+      "control_acceleration_m_s2": [
+        4.5365293308642684e-07,
+        3.559345819481613e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999732879432146,
+      "link_margin_db": 41.72767130751137,
+      "ebn0_db": 49.72767130751137,
+      "link_available": true,
+      "soc": 0.1728947368421053,
+      "energy_mode": "CRITICO",
+      "temperature_c": 24.340223362990823,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3000.0,
+      "time_min": 50.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72761822110057,
+      "ebn0_db": 49.72761822110057,
+      "link_available": true,
+      "soc": 0.8837076023391818,
+      "energy_mode": "NORMAL",
+      "temperature_c": 24.252645174507286,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": true,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3000.0,
+      "time_min": 50.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -0.35599195172103504,
+        999.3583362923283,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0018100929819813982,
+        0.0013595159932153914,
+        0.0
+      ],
+      "formation_error_m": 0.7338000977331103,
+      "control_acceleration_m_s2": [
+        -7.360904821430485e-06,
+        1.95714620771052e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9993583996981464,
+      "link_margin_db": 41.73301394439129,
+      "ebn0_db": 49.73301394439129,
+      "link_available": true,
+      "soc": 0.7367076023391818,
+      "energy_mode": "NORMAL",
+      "temperature_c": 24.24366856362287,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": true,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3000.0,
+      "time_min": 50.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.02823849393998716,
+        -999.9793991988241,
+        0.0
+      ],
+      "velocity_m_s": [
+        2.4574574431783924e-05,
+        -9.26163854565702e-05,
+        0.0
+      ],
+      "formation_error_m": 0.034954335197319726,
+      "control_acceleration_m_s2": [
+        3.681732833454719e-07,
+        3.289150601350807e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999793995975387,
+      "link_margin_db": 41.72761822110057,
+      "ebn0_db": 49.72761822110057,
+      "link_available": true,
+      "soc": 0.16821637426900585,
+      "energy_mode": "CRITICO",
+      "temperature_c": 24.106201026691743,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3060.0,
+      "time_min": 51.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.7275742037116,
+      "ebn0_db": 49.7275742037116,
+      "link_available": true,
+      "soc": 0.8755204678362578,
+      "energy_mode": "NORMAL",
+      "temperature_c": 24.32738065705656,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3060.0,
+      "time_min": 51.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -0.25750202823889956,
+        999.4367398662791,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0014742947923634224,
+        0.0012612865622005193,
+        0.0
+      ],
+      "formation_error_m": 0.6193296963543633,
+      "control_acceleration_m_s2": [
+        -6.644317774129388e-06,
+        1.1749101768130424e-06,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9994367730386106,
+      "link_margin_db": 41.73233279186954,
+      "ebn0_db": 49.73233279186954,
+      "link_available": true,
+      "soc": 0.7285204678362578,
+      "energy_mode": "NORMAL",
+      "temperature_c": 24.319301707260582,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3060.0,
+      "time_min": 51.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.026624294709863966,
+        -999.9844668407362,
+        0.0
+      ],
+      "velocity_m_s": [
+        2.9644693424636304e-05,
+        -7.641600897281915e-05,
+        0.0
+      ],
+      "formation_error_m": 0.030824212974733232,
+      "control_acceleration_m_s2": [
+        2.953283468001889e-07,
+        3.006648865069095e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999844671951682,
+      "link_margin_db": 41.7275742037116,
+      "ebn0_db": 49.7275742037116,
+      "link_available": true,
+      "soc": 0.16353801169590643,
+      "energy_mode": "CRITICO",
+      "temperature_c": 23.895580924022568,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3120.0,
+      "time_min": 52.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.727538036602,
+      "ebn0_db": 49.727538036602,
+      "link_available": true,
+      "soc": 0.8708421052631583,
+      "energy_mode": "NORMAL",
+      "temperature_c": 24.0946425913509,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3120.0,
+      "time_min": 52.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -0.17766753207015784,
+        999.5090992527439,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0011874415995020283,
+        0.0011569717769790233,
+        0.0
+      ],
+      "formation_error_m": 0.5220625399398904,
+      "control_acceleration_m_s2": [
+        -5.946182154613071e-06,
+        5.622407292896456e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9995091150433714,
+      "link_margin_db": 41.731704105847,
+      "ebn0_db": 49.731704105847,
+      "link_available": true,
+      "soc": 0.7238421052631583,
+      "energy_mode": "NORMAL",
+      "temperature_c": 24.087371536534523,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3120.0,
+      "time_min": 52.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.02476513471079713,
+        -999.9886307248705,
+        0.0
+      ],
+      "velocity_m_s": [
+        3.2699897352422546e-05,
+        -6.24470206140924e-05,
+        0.0
+      ],
+      "formation_error_m": 0.027250180076722207,
+      "control_acceleration_m_s2": [
+        2.3370351539656227e-07,
+        2.721906623230983e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.99998863103153,
+      "link_margin_db": 41.727538036602,
+      "ebn0_db": 49.727538036602,
+      "link_available": true,
+      "soc": 0.158859649122807,
+      "energy_mode": "CRITICO",
+      "temperature_c": 23.70602283162031,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3180.0,
+      "time_min": 53.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.727508617252695,
+      "ebn0_db": 49.727508617252695,
+      "link_available": true,
+      "soc": 0.8661637426900589,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.885178332215812,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3180.0,
+      "time_min": 53.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -0.11371839219821427,
+        999.5751690633931,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0009441686152204356,
+        0.0010506801537934582,
+        0.0
+      ],
+      "formation_error_m": 0.43978767311333167,
+      "control_acceleration_m_s2": [
+        -5.2789810777992e-06,
+        9.11775017902399e-08,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9995751755320775,
+      "link_margin_db": 41.73113004889777,
+      "ebn0_db": 49.73113004889777,
+      "link_available": true,
+      "soc": 0.7191637426900589,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.87863438288107,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3180.0,
+      "time_min": 53.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.022768857213513096,
+        -999.9920177673048,
+        0.0
+      ],
+      "velocity_m_s": [
+        3.4176238479568375e-05,
+        -5.048672467790917e-05,
+        0.0
+      ],
+      "formation_error_m": 0.02412751329105153,
+      "control_acceleration_m_s2": [
+        1.8196723643371498e-07,
+        2.442491435190216e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999920180265173,
+      "link_margin_db": 41.727508617252695,
+      "ebn0_db": 49.727508617252695,
+      "link_available": true,
+      "soc": 0.15418128654970756,
+      "energy_mode": "CRITICO",
+      "temperature_c": 23.53542054845828,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3240.0,
+      "time_min": 54.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.727484956982565,
+      "ebn0_db": 49.727484956982565,
+      "link_available": true,
+      "soc": 0.8614853801169595,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.69666049899423,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3240.0,
+      "time_min": 54.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -0.06319674837454194,
+        999.6349207912651,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.000739400622142614,
+        0.0009455262185774844,
+        0.0
+      ],
+      "formation_error_m": 0.37050864720758314,
+      "control_acceleration_m_s2": [
+        -4.651270009650073e-06,
+        -2.6262557392249273e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.999634922788909,
+      "link_margin_db": 41.730610885774695,
+      "ebn0_db": 49.730610885774695,
+      "link_available": true,
+      "soc": 0.7144853801169595,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.690770944592963,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3240.0,
+      "time_min": 54.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.020719317820193768,
+        -999.9947417831029,
+        0.0
+      ],
+      "velocity_m_s": [
+        3.443795994960766e-05,
+        -4.031954464138546e-05,
+        0.0
+      ],
+      "formation_error_m": 0.021376130984613217,
+      "control_acceleration_m_s2": [
+        1.3888267680701408e-07,
+        2.1739201918871426e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999947419977491,
+      "link_margin_db": 41.727484956982565,
+      "ebn0_db": 49.727484956982565,
+      "link_available": true,
+      "soc": 0.14950292397660814,
+      "energy_mode": "CRITICO",
+      "temperature_c": 23.38187849361245,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3300.0,
+      "time_min": 55.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72746617636997,
+      "ebn0_db": 49.72746617636997,
+      "link_available": true,
+      "soc": 0.85680701754386,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.526994449094808,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3300.0,
+      "time_min": 55.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        -0.02393817360941671,
+        999.6884884772857,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0005684032707744029,
+        0.0008438062485385593,
+        0.0
+      ],
+      "formation_error_m": 0.3124299360489671,
+      "control_acceleration_m_s2": [
+        -4.068462694006889e-06,
+        -5.202195340216625e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.999688488763893,
+      "link_margin_db": 41.730145460176715,
+      "ebn0_db": 49.730145460176715,
+      "link_available": true,
+      "soc": 0.70980701754386,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.521693850133666,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3300.0,
+      "time_min": 55.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.018680408485239063,
+        -999.9969040121682,
+        0.0
+      ],
+      "velocity_m_s": [
+        3.378675889760802e-05,
+        -3.17405159851715e-05,
+        0.0
+      ],
+      "formation_error_m": 0.018935226479499762,
+      "control_acceleration_m_s2": [
+        1.0331409852391707e-07,
+        1.9200437124568318e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999969041866477,
+      "link_margin_db": 41.72746617636997,
+      "ebn0_db": 49.72746617636997,
+      "link_available": true,
+      "soc": 0.14482456140350872,
+      "energy_mode": "CRITICO",
+      "temperature_c": 23.243690644251206,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3360.0,
+      "time_min": 56.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72745149915008,
+      "ebn0_db": 49.72745149915008,
+      "link_available": true,
+      "soc": 0.8521286549707606,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.374295004185328,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3360.0,
+      "time_min": 56.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        0.0059495535316935015,
+        999.7361241716247,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.00042681300692082335,
+        0.0007471494928960726,
+        0.0
+      ],
+      "formation_error_m": 0.26394289152761313,
+      "control_acceleration_m_s2": [
+        -3.533495126000457e-06,
+        -6.996793756633357e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.999736124189328,
+      "link_margin_db": 41.729731585059255,
+      "ebn0_db": 49.729731585059255,
+      "link_available": true,
+      "soc": 0.7051286549707606,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.3695244651203,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3360.0,
+      "time_min": 56.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.0166995514437806,
+        -999.9985938207935,
+        0.0
+      ],
+      "velocity_m_s": [
+        3.247023723768817e-05,
+        -2.4557632152847306e-05,
+        0.0
+      ],
+      "formation_error_m": 0.016758650255440675,
+      "control_acceleration_m_s2": [
+        7.422913097410665e-08,
+        1.6833747309338925e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999985939602313,
+      "link_margin_db": 41.72745149915008,
+      "ebn0_db": 49.72745149915008,
+      "link_available": true,
+      "soc": 0.14014619883040927,
+      "energy_mode": "CRITICO",
+      "temperature_c": 23.119321579826085,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3420.0,
+      "time_min": 57.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72744024512494,
+      "ebn0_db": 49.72744024512494,
+      "link_available": true,
+      "soc": 0.8474502923976612,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.236865503766793,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3420.0,
+      "time_min": 57.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        0.0281089842695833,
+        999.7781617972437,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0003106502975940903,
+        0.0006566473907708651,
+        0.0
+      ],
+      "formation_error_m": 0.22361194779979965,
+      "control_acceleration_m_s2": [
+        -3.047382066144389e-06,
+        -8.164150710405886e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9997781621923889,
+      "link_margin_db": 41.72936635890636,
+      "ebn0_db": 49.72936635890636,
+      "link_available": true,
+      "soc": 0.7004502923976612,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.23257201860827,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3420.0,
+      "time_min": 57.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.01481071163336081,
+        -999.9998895170952,
+        0.0
+      ],
+      "velocity_m_s": [
+        3.0689538409114964e-05,
+        -1.8593276920270975e-05,
+        0.0
+      ],
+      "formation_error_m": 0.014811123710199124,
+      "control_acceleration_m_s2": [
+        5.0697925394296525e-08,
+        1.4653655726613266e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9999998896267738,
+      "link_margin_db": 41.72744024512494,
+      "ebn0_db": 49.72744024512494,
+      "link_available": true,
+      "soc": 0.13546783625730985,
+      "energy_mode": "CRITICO",
+      "temperature_c": 23.007389421843477,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3480.0,
+      "time_min": 58.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72743182251118,
+      "ebn0_db": 49.72743182251118,
+      "link_available": true,
+      "soc": 0.8427719298245617,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.113178953390115,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3480.0,
+      "time_min": 58.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        0.04395595697767543,
+        999.8149881705641,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.00021632005908926282,
+        0.0005729632041457619,
+        0.0
+      ],
+      "formation_error_m": 0.19016178160986877,
+      "control_acceleration_m_s2": [
+        -2.609679612267611e-06,
+        -8.834690444482245e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9998149891368059,
+      "link_margin_db": 41.72904641904786,
+      "ebn0_db": 49.72904641904786,
+      "link_available": true,
+      "soc": 0.6957719298245617,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.109314816747442,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3480.0,
+      "time_min": 58.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.013036975707748215,
+        -1000.0008592314006,
+        0.0
+      ],
+      "velocity_m_s": [
+        2.8606188833783236e-05,
+        -1.3684939716869811e-05,
+        0.0
+      ],
+      "formation_error_m": 0.013065259821532041,
+      "control_acceleration_m_s2": [
+        3.1890003484698445e-08,
+        1.266641457463226e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0000008593163818,
+      "link_margin_db": 41.72743182251118,
+      "ebn0_db": 49.72743182251118,
+      "link_available": true,
+      "soc": 0.13078947368421043,
+      "energy_mode": "CRITICO",
+      "temperature_c": 22.90665047965913,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3540.0,
+      "time_min": 59.0,
+      "illuminated": false,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72742572005582,
+      "ebn0_db": 49.72742572005582,
+      "link_available": true,
+      "soc": 0.8380935672514623,
+      "energy_mode": "NORMAL",
+      "temperature_c": 23.001861058051105,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3540.0,
+      "time_min": 59.0,
+      "illuminated": false,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        0.05470230492479859,
+        999.8470200747715,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0001406025204342232,
+        0.0004964243487898582,
+        0.0
+      ],
+      "formation_error_m": 0.16246599547903032,
+      "control_acceleration_m_s2": [
+        -2.2188662619697574e-06,
+        -9.117962857495711e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9998470215711716,
+      "link_margin_db": 41.72876814183073,
+      "ebn0_db": 49.72876814183073,
+      "link_available": true,
+      "soc": 0.6910935672514623,
+      "energy_mode": "NORMAL",
+      "temperature_c": 22.9983833350727,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3540.0,
+      "time_min": 59.0,
+      "illuminated": false,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.01139274419528435,
+        -1000.0015618234722,
+        0.0
+      ],
+      "velocity_m_s": [
+        2.6348177645970348e-05,
+        -9.685378204960252e-06,
+        0.0
+      ],
+      "formation_error_m": 0.011499300537754144,
+      "control_acceleration_m_s2": [
+        1.7069462737924212e-08,
+        1.0871949508427527e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0000015618883695,
+      "link_margin_db": 41.72742572005582,
+      "ebn0_db": 49.72742572005582,
+      "link_available": true,
+      "soc": 0.126111111111111,
+      "energy_mode": "CRITICO",
+      "temperature_c": 22.815985431693218,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3600.0,
+      "time_min": 60.0,
+      "illuminated": true,
+      "satellite_id": "SAT-000",
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "velocity_m_s": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "formation_error_m": 0.0,
+      "control_acceleration_m_s2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance_to_leader_km": 0.0,
+      "link_margin_db": 41.72742149917312,
+      "ebn0_db": 49.72742149917312,
+      "link_available": true,
+      "soc": 0.8334152046783629,
+      "energy_mode": "NORMAL",
+      "temperature_c": 22.901674952245994,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": true,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3600.0,
+      "time_min": 60.0,
+      "illuminated": true,
+      "satellite_id": "SAT-001",
+      "position_m": [
+        0.06137781917831799,
+        999.8746864131581,
+        0.0
+      ],
+      "velocity_m_s": [
+        8.063717300028862e-05,
+        0.0004270995493109841,
+        0.0
+      ],
+      "formation_error_m": 0.13953756388253225,
+      "control_acceleration_m_s2": [
+        -1.8726537675686689e-06,
+        -9.105246576496289e-07,
+        -0.0
+      ],
+      "distance_to_leader_km": 0.9998746882970125,
+      "link_margin_db": 41.7285277982608,
+      "ebn0_db": 49.7285277982608,
+      "link_available": true,
+      "soc": 0.6864152046783629,
+      "energy_mode": "NORMAL",
+      "temperature_c": 22.89854500156543,
+      "cognitive_action": "OPERACION_NOMINAL",
+      "federated_eligible": true,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    },
+    {
+      "time_s": 3600.0,
+      "time_min": 60.0,
+      "illuminated": true,
+      "satellite_id": "SAT-002",
+      "position_m": [
+        -0.00988558105481587,
+        -1000.002047787463,
+        0.0
+      ],
+      "velocity_m_s": [
+        2.4015318475770495e-05,
+        -6.462364330361863e-06,
+        0.0
+      ],
+      "formation_error_m": 0.010095451762295418,
+      "control_acceleration_m_s2": [
+        5.58907329015345e-09,
+        9.265466390230527e-08,
+        -0.0
+      ],
+      "distance_to_leader_km": 1.0000020478363252,
+      "link_margin_db": 41.72742149917312,
+      "ebn0_db": 49.72742149917312,
+      "link_available": true,
+      "soc": 0.1214327485380116,
+      "energy_mode": "CRITICO",
+      "temperature_c": 22.734386888523897,
+      "cognitive_action": "ENERGIA_CRITICA",
+      "federated_eligible": false,
+      "satellite_operational": true,
+      "scenario_federated_excluded": false,
+      "scenario_effects": []
+    }
+  ],
+  "events": [
+    {
+      "time_s": 0.0,
+      "time_min": 0.0,
+      "category": "ORBITA",
+      "message": "Entrada en iluminación solar"
+    },
+    {
+      "time_s": 0.0,
+      "time_min": 0.0,
+      "category": "SUPERVISOR",
+      "message": "SAT-000: OPERACION_NOMINAL. Todos los parámetros se encuentran dentro de límites"
+    },
+    {
+      "time_s": 0.0,
+      "time_min": 0.0,
+      "category": "SUPERVISOR",
+      "message": "SAT-001: RECUPERAR_FORMACION. Error de formación superior al límite: se prioriza el controlador"
+    },
+    {
+      "time_s": 0.0,
+      "time_min": 0.0,
+      "category": "SUPERVISOR",
+      "message": "SAT-002: RECUPERAR_FORMACION. Error de formación superior al límite: se prioriza el controlador"
+    },
+    {
+      "time_s": 0.0,
+      "time_min": 0.0,
+      "category": "FEDAVG",
+      "message": "Ronda federada cancelada por falta de participantes"
+    },
+    {
+      "time_s": 420.0,
+      "time_min": 7.0,
+      "category": "SUPERVISOR",
+      "message": "SAT-002: AHORRO_ENERGIA. SOC bajo: se desactivan las cargas computacionales no críticas"
+    },
+    {
+      "time_s": 600.0,
+      "time_min": 10.0,
+      "category": "ESCENARIO",
+      "scenario": "COMBINED_FAILURE",
+      "effect": "ADD_POSITION_OFFSET",
+      "satellite_id": "SAT-001",
+      "transition": "INICIO",
+      "message": "Perturbación de formación en SAT-001."
+    },
+    {
+      "time_s": 600.0,
+      "time_min": 10.0,
+      "category": "FEDAVG",
+      "message": "Ronda federada cancelada por falta de participantes"
+    },
+    {
+      "time_s": 900.0,
+      "time_min": 15.0,
+      "category": "SUPERVISOR",
+      "message": "SAT-002: OPERACION_NOMINAL. Todos los parámetros se encuentran dentro de límites"
+    },
+    {
+      "time_s": 1200.0,
+      "time_min": 20.0,
+      "category": "ESCENARIO",
+      "scenario": "COMBINED_FAILURE",
+      "effect": "ADD_LINK_LOSS_DB",
+      "satellite_id": "SAT-001",
+      "transition": "INICIO",
+      "message": "Degradación temporal del enlace de SAT-001."
+    },
+    {
+      "time_s": 1200.0,
+      "time_min": 20.0,
+      "category": "FEDAVG",
+      "message": "Ronda federada 1 completada"
+    },
+    {
+      "time_s": 1620.0,
+      "time_min": 27.0,
+      "category": "SUPERVISOR",
+      "message": "SAT-001: OPERACION_NOMINAL. Todos los parámetros se encuentran dentro de límites"
+    },
+    {
+      "time_s": 1800.0,
+      "time_min": 30.0,
+      "category": "ESCENARIO",
+      "scenario": "COMBINED_FAILURE",
+      "effect": "SET_SOC",
+      "satellite_id": "SAT-002",
+      "transition": "INICIO",
+      "message": "SOC crítico en SAT-002."
+    },
+    {
+      "time_s": 1800.0,
+      "time_min": 30.0,
+      "category": "SUPERVISOR",
+      "message": "SAT-002: ENERGIA_CRITICA. SOC crítico: se preservan únicamente funciones de seguridad y control"
+    },
+    {
+      "time_s": 1800.0,
+      "time_min": 30.0,
+      "category": "FEDAVG",
+      "message": "Ronda federada 2 completada"
+    },
+    {
+      "time_s": 2100.0,
+      "time_min": 35.0,
+      "category": "ESCENARIO",
+      "scenario": "COMBINED_FAILURE",
+      "effect": "ADD_LINK_LOSS_DB",
+      "satellite_id": "SAT-001",
+      "transition": "FIN",
+      "message": "Finaliza: Degradación temporal del enlace de SAT-001."
+    },
+    {
+      "time_s": 2160.0,
+      "time_min": 36.0,
+      "category": "SUPERVISOR",
+      "message": "SAT-002: AHORRO_ENERGIA. SOC bajo: se desactivan las cargas computacionales no críticas"
+    },
+    {
+      "time_s": 2400.0,
+      "time_min": 40.0,
+      "category": "ORBITA",
+      "message": "Entrada en eclipse"
+    },
+    {
+      "time_s": 2400.0,
+      "time_min": 40.0,
+      "category": "FEDAVG",
+      "message": "Ronda federada 3 completada"
+    },
+    {
+      "time_s": 2640.0,
+      "time_min": 44.0,
+      "category": "SUPERVISOR",
+      "message": "SAT-002: ENERGIA_CRITICA. SOC crítico: se preservan únicamente funciones de seguridad y control"
+    },
+    {
+      "time_s": 3000.0,
+      "time_min": 50.0,
+      "category": "FEDAVG",
+      "message": "Ronda federada 4 completada"
+    },
+    {
+      "time_s": 3600.0,
+      "time_min": 60.0,
+      "category": "ORBITA",
+      "message": "Entrada en iluminación solar"
+    },
+    {
+      "time_s": 3600.0,
+      "time_min": 60.0,
+      "category": "FEDAVG",
+      "message": "Ronda federada 5 completada"
+    }
+  ],
+  "federated_rounds": [
+    {
+      "time_s": 1200.0,
+      "time_min": 20.0,
+      "round_number": 1,
+      "selected_clients": [
+        "SAT-000",
+        "SAT-002"
+      ],
+      "excluded_clients": [
+        "SAT-001"
+      ],
+      "global_loss": 0.39019489414168645,
+      "global_accuracy": 0.9666666666666667
+    },
+    {
+      "time_s": 1800.0,
+      "time_min": 30.0,
+      "round_number": 2,
+      "selected_clients": [
+        "SAT-000",
+        "SAT-001"
+      ],
+      "excluded_clients": [
+        "SAT-002"
+      ],
+      "global_loss": 0.289398311323306,
+      "global_accuracy": 0.9666666666666667
+    },
+    {
+      "time_s": 2400.0,
+      "time_min": 40.0,
+      "round_number": 3,
+      "selected_clients": [
+        "SAT-000",
+        "SAT-001"
+      ],
+      "excluded_clients": [
+        "SAT-002"
+      ],
+      "global_loss": 0.23927239382221926,
+      "global_accuracy": 0.9666666666666667
+    },
+    {
+      "time_s": 3000.0,
+      "time_min": 50.0,
+      "round_number": 4,
+      "selected_clients": [
+        "SAT-000",
+        "SAT-001"
+      ],
+      "excluded_clients": [
+        "SAT-002"
+      ],
+      "global_loss": 0.20900979775258,
+      "global_accuracy": 0.9666666666666667
+    },
+    {
+      "time_s": 3600.0,
+      "time_min": 60.0,
+      "round_number": 5,
+      "selected_clients": [
+        "SAT-000",
+        "SAT-001"
+      ],
+      "excluded_clients": [
+        "SAT-002"
+      ],
+      "global_loss": 0.18857664223747345,
+      "global_accuracy": 0.9666666666666667
+    }
+  ],
+  "summary": {
+    "scenario": "COMBINED_FAILURE",
+    "scenario_description": "Combinación de perturbación de formación, pérdida RF y energía crítica.",
+    "scenario_event_count": 3,
+    "duration_s": 3600.0,
+    "time_step_s": 60.0,
+    "satellite_count": 3,
+    "initial_formation_errors_m": {
+      "SAT-000": 0.0,
+      "SAT-001": 200.0,
+      "SAT-002": 50.0
+    },
+    "final_formation_errors_m": {
+      "SAT-000": 0.0,
+      "SAT-001": 0.13953756388253225,
+      "SAT-002": 0.010095451762295418
+    },
+    "minimum_soc": 0.1214327485380116,
+    "minimum_link_margin_db": 6.307267741836128,
+    "initial_global_loss": 0.6931471805599453,
+    "final_global_loss": 0.18857664223747345,
+    "initial_global_accuracy": 0.5,
+    "final_global_accuracy": 0.9666666666666667,
+    "federated_rounds_completed": 5,
+    "federated_rounds_cancelled": 2,
+    "event_count": 23,
+    "link_unavailable_snapshot_count": 0,
+    "disabled_satellite_snapshot_count": 0
+  }
+}

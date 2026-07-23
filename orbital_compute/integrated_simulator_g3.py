@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+from dataclasses import replace
 from pathlib import Path
 from typing import Any
 
@@ -26,7 +27,18 @@ from orbital_compute.formation_control import (
     mean_motion_rad_s,
     rk4_step,
 )
-from orbital_compute.rf_isl_ka import RFISLKa
+from orbital_compute.rf_isl_ka import (
+    RFISLKa,
+    ber_bpsk_qpsk,
+)
+from orbital_compute.scenario_runtime_g3 import (
+    ScenarioRuntime,
+)
+from orbital_compute.scenarios_g3 import (
+    ScenarioDefinition,
+    ScenarioName,
+    get_scenario,
+)
 
 
 class IntegratedG3Simulator:
@@ -50,6 +62,11 @@ class IntegratedG3Simulator:
         time_step_s: float = 60.0,
         federated_interval_s: float = 600.0,
         random_seed: int = 42,
+        scenario: (
+            ScenarioName
+            | str
+            | ScenarioDefinition
+        ) = ScenarioName.NOMINAL,
     ) -> None:
         if duration_s <= 0.0:
             raise ValueError(
@@ -93,6 +110,15 @@ class IntegratedG3Simulator:
         self.duration_s = float(duration_s)
 
         self.time_step_s = float(time_step_s)
+
+        if isinstance(scenario, ScenarioDefinition):
+            self.scenario = scenario
+        else:
+            self.scenario = get_scenario(scenario)
+
+        self.scenario_runtime = ScenarioRuntime(
+            self.scenario
+        )
 
         self.number_of_steps = int(
             round(duration_steps)
@@ -308,8 +334,13 @@ class IntegratedG3Simulator:
 
     def calculate_control_commands(
         self,
+        disabled_satellites: set[str] | None = None,
     ) -> dict[str, np.ndarray]:
         """Calcula la aceleración de control."""
+
+        disabled_satellites = (
+            disabled_satellites or set()
+        )
 
         commands = {
             self.leader_id: np.zeros(
@@ -320,6 +351,13 @@ class IntegratedG3Simulator:
 
         for satellite_id in self.satellite_ids:
             if satellite_id == self.leader_id:
+                continue
+
+            if satellite_id in disabled_satellites:
+                commands[satellite_id] = np.zeros(
+                    3,
+                    dtype=float,
+                )
                 continue
 
             state = self.relative_states[
@@ -342,6 +380,8 @@ class IntegratedG3Simulator:
 
     def calculate_links(
         self,
+        time_s: float = 0.0,
+        disabled_satellites: set[str] | None = None,
     ) -> tuple[
         dict[str, Any],
         dict[str, float],
@@ -352,6 +392,10 @@ class IntegratedG3Simulator:
         Para el líder se utiliza el peor margen de sus
         dos enlaces con los seguidores.
         """
+
+        disabled_satellites = (
+            disabled_satellites or set()
+        )
 
         link_results: dict[str, Any] = {}
 
@@ -381,6 +425,60 @@ class IntegratedG3Simulator:
                 distance_km=distance_km
             )
 
+            additional_loss_db = (
+                self.scenario_runtime
+                .additional_link_loss_db(
+                    satellite_id=satellite_id,
+                    time_s=time_s,
+                )
+            )
+
+            if additional_loss_db > 0.0:
+                degraded_ebn0_db = (
+                    result.ebn0_db
+                    - additional_loss_db
+                )
+
+                degraded_margin_db = (
+                    result.link_margin_db
+                    - additional_loss_db
+                )
+
+                result = replace(
+                    result,
+                    received_power_dbw=(
+                        result.received_power_dbw
+                        - additional_loss_db
+                    ),
+                    carrier_to_noise_density_dbhz=(
+                        result.carrier_to_noise_density_dbhz
+                        - additional_loss_db
+                    ),
+                    ebn0_db=degraded_ebn0_db,
+                    link_margin_db=(
+                        degraded_margin_db
+                    ),
+                    ber=ber_bpsk_qpsk(
+                        degraded_ebn0_db
+                    ),
+                    link_available=(
+                        degraded_margin_db >= 0.0
+                    ),
+                )
+
+            if (
+                satellite_id in disabled_satellites
+                or self.scenario_runtime
+                .link_forced_down(
+                    satellite_id=satellite_id,
+                    time_s=time_s,
+                )
+            ):
+                result = replace(
+                    result,
+                    link_available=False,
+                )
+
             link_results[satellite_id] = result
 
             distances_km[satellite_id] = (
@@ -392,7 +490,8 @@ class IntegratedG3Simulator:
         worst_link = min(
             follower_results,
             key=lambda result: (
-                result.link_margin_db
+                result.link_available,
+                result.link_margin_db,
             ),
         )
 
@@ -442,6 +541,29 @@ class IntegratedG3Simulator:
                 == 0
             )
 
+            events.extend(
+                self.scenario_runtime.update(
+                    time_s=time_s,
+                    relative_states=(
+                        self.relative_states
+                    ),
+                    energy_systems=(
+                        self.energy_systems
+                    ),
+                )
+            )
+
+            disabled_satellites = {
+                satellite_id
+                for satellite_id
+                in self.satellite_ids
+                if self.scenario_runtime
+                .satellite_disabled(
+                    satellite_id=satellite_id,
+                    time_s=time_s,
+                )
+            }
+
             # Cambio iluminación/eclipses
             if (
                 illuminated
@@ -472,14 +594,23 @@ class IntegratedG3Simulator:
             )
 
             control_commands = (
-                self.calculate_control_commands()
+                self.calculate_control_commands(
+                    disabled_satellites=(
+                        disabled_satellites
+                    )
+                )
             )
 
             # Comunicaciones RF
             (
                 link_results,
                 distances_km,
-            ) = self.calculate_links()
+            ) = self.calculate_links(
+                time_s=time_s,
+                disabled_satellites=(
+                    disabled_satellites
+                ),
+            )
 
             # Estados del supervisor
             cognitive_states = []
@@ -522,6 +653,17 @@ class IntegratedG3Simulator:
                         ),
                         training_requested=(
                             federated_round_due
+                            and satellite_id
+                            not in disabled_satellites
+                            and not (
+                                self.scenario_runtime
+                                .federated_excluded(
+                                    satellite_id=(
+                                        satellite_id
+                                    ),
+                                    time_s=time_s,
+                                )
+                            )
                         ),
                     )
                 )
@@ -771,6 +913,28 @@ class IntegratedG3Simulator:
                             decision
                             .federated_training_allowed
                         ),
+                        "satellite_operational": (
+                            satellite_id
+                            not in disabled_satellites
+                        ),
+                        "scenario_federated_excluded": (
+                            self.scenario_runtime
+                            .federated_excluded(
+                                satellite_id=(
+                                    satellite_id
+                                ),
+                                time_s=time_s,
+                            )
+                        ),
+                        "scenario_effects": list(
+                            self.scenario_runtime
+                            .active_effects(
+                                satellite_id=(
+                                    satellite_id
+                                ),
+                                time_s=time_s,
+                            )
+                        ),
                     }
                 )
 
@@ -796,19 +960,27 @@ class IntegratedG3Simulator:
                     in selected_clients
                 )
 
-                loads = EnergyLoads(
-                    housekeeping_active=True,
-                    control_active=(
-                        decision.control_active
-                    ),
-                    isl_active=(
-                        decision
-                        .isl_control_channel_active
-                    ),
-                    federated_training_active=(
-                        training_active
-                    ),
-                )
+                if satellite_id in disabled_satellites:
+                    loads = EnergyLoads(
+                        housekeeping_active=False,
+                        control_active=False,
+                        isl_active=False,
+                        federated_training_active=False,
+                    )
+                else:
+                    loads = EnergyLoads(
+                        housekeeping_active=True,
+                        control_active=(
+                            decision.control_active
+                        ),
+                        isl_active=(
+                            decision
+                            .isl_control_channel_active
+                        ),
+                        federated_training_active=(
+                            training_active
+                        ),
+                    )
 
                 self.energy_systems[
                     satellite_id
@@ -860,6 +1032,9 @@ class IntegratedG3Simulator:
 
             for satellite_id in self.satellite_ids:
                 if satellite_id == self.leader_id:
+                    continue
+
+                if satellite_id in disabled_satellites:
                     continue
 
                 self.relative_states[
@@ -923,6 +1098,13 @@ class IntegratedG3Simulator:
         }
 
         summary = {
+            "scenario": self.scenario.name.value,
+            "scenario_description": (
+                self.scenario.description
+            ),
+            "scenario_event_count": len(
+                self.scenario.events
+            ),
             "duration_s": self.duration_s,
             "time_step_s": self.time_step_s,
             "satellite_count": len(
@@ -963,9 +1145,42 @@ class IntegratedG3Simulator:
                 cancelled_rounds
             ),
             "event_count": len(events),
+            "link_unavailable_snapshot_count": sum(
+                not snapshot["link_available"]
+                for snapshot in snapshots
+            ),
+            "disabled_satellite_snapshot_count": sum(
+                not snapshot[
+                    "satellite_operational"
+                ]
+                for snapshot in snapshots
+            ),
         }
 
         return {
+            "scenario": {
+                "name": self.scenario.name.value,
+                "description": (
+                    self.scenario.description
+                ),
+                "events": [
+                    {
+                        "effect": event.effect.value,
+                        "start_time_s": (
+                            event.start_time_s
+                        ),
+                        "duration_s": event.duration_s,
+                        "satellite_id": (
+                            event.satellite_id
+                        ),
+                        "value": event.value,
+                        "description": (
+                            event.description
+                        ),
+                    }
+                    for event in self.scenario.events
+                ],
+            },
             "snapshots": snapshots,
             "events": events,
             "federated_rounds": (

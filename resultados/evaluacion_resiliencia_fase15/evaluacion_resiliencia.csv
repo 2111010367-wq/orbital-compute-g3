@@ -1,0 +1,9 @@
+﻿scenario,score,level,formation_penalty,energy_penalty,rf_margin_penalty,link_availability_penalty,node_availability_penalty,federated_learning_penalty,global_accuracy_penalty,findings
+NOMINAL,100.0,ROBUSTO,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+LOW_POWER,93.91461988304094,DEGRADADO,0.0,0.3042690058479532,0.0,0.0,0.0,0.0,0.0,DEGRADADO: SOC inferior al 20 %.
+ISL_DEGRADATION,83.26041226004219,DEGRADADO,0.0,0.0,0.8369793869978903,0.0,0.0,0.0,0.0,DEGRADADO: margen Ka inferior a 10 dB.
+ISL_BLACKOUT,96.36065573770492,DEGRADADO,0.0,0.0,0.0,0.10928961748633881,0.0,0.20000000000000007,0.0,DEGRADADO: disponibilidad ISL inferior al 95 %.; DEGRADADO: menos del 60 % de rondas FedAvg fueron completadas.
+SATELLITE_FAILURE,69.67294256452794,CRITICO,0.7775550575659529,0.0,0.0,0.33879781420765026,0.16939890710382513,0.8,0.0,DEGRADADO: error de formación igual o superior a 0.50 m.; CRITICO: disponibilidad ISL inferior al 80 %.; CRITICO: disponibilidad de nodos inferior al 90 %.; CRITICO: menos del 40 % de rondas FedAvg fueron completadas.
+FORMATION_DISTURBANCE,87.68877766282232,DEGRADADO,0.615561116858884,0.0,0.0,0.0,0.0,0.0,0.0,DEGRADADO: error de formación igual o superior a 0.50 m.
+FEDERATED_EXCLUSION,100.0,ROBUSTO,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+COMBINED_FAILURE,71.21165887431683,CRITICO,0.08226485265167564,0.5142690058479537,0.8428831977845291,0.0,0.0,0.0,0.0,CRITICO: SOC inferior al 15 %.; DEGRADADO: margen Ka inferior a 10 dB.
