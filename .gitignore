@@ -17,3 +17,14 @@ orbit_3d.html
 venv/
 .venv/
 dist/
+# Respaldos locales de la Fase 17
+*.bak
+dashboard_g3/*antes*.py
+dashboard_g3/*before*.py
+dashboard_g3/*backup*.py
+dashboard_g3/*respaldo*.py
+respaldo_*/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc

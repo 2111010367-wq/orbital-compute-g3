@@ -1,3 +1,5 @@
 sgp4>=2.22
 numpy>=1.24
 matplotlib==3.11.1
+dash==4.4.1
+plotly==6.9.0
