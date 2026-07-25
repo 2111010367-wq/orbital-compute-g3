@@ -1093,26 +1093,63 @@ def create_dashboard_layout(
                                         ],
                                     ),
                                     html.Div(
-                                        className=(
-                                            "timeline-placeholder"
-                                        ),
+                                        id="mission-capabilities",
+                                        className="mission-capabilities",
                                         children=[
-                                            html.Div(
-                                                className=(
-                                                    "pulse-line"
+                                          html.Div(
+                                           className="mission-capability",
+                                            children=[
+                                               html.Span(
+                                                "CONTROL",
+                                                className="mission-capability-label",
                                                 ),
-                                            ),
-                                            html.Strong(
-                                                "Gráficas dinámicas "
-                                                "preparadas"
-                                            ),
-                                            html.Span(
-                                                "Se conectarán con "
-                                                "los snapshots en "
-                                                "la Fase 17.2."
-                                            ),
-                                        ],
-                                    ),
+                                               html.Strong(
+                                                  "Formación relativa",
+                                                   className="mission-capability-value",
+                                                ),
+                                              ],
+                                             ),
+                                    html.Div(
+                                         className="mission-capability",
+                                         children=[
+                                              html.Span(
+                                                "ENERGÍA",
+                                                className="mission-capability-label",
+                                               ),
+                                               html.Strong(
+                                               "Gestión autónoma",
+                                               className="mission-capability-value",
+                                               ),
+                                            ],
+                                           ),
+                                    html.Div(
+                                        className="mission-capability",
+                                          children=[
+                                         html.Span(
+                                         "COMUNICACIÓN",
+                                       className="mission-capability-label",
+                                        ),
+                                        html.Strong(
+                                       "Enlace ISL Ka",
+                                         className="mission-capability-value",
+                                        ),
+                                         ],
+                                     ),
+                                    html.Div(
+                                       className="mission-capability",
+                                       children=[
+                                        html.Span(
+                                            "INTELIGENCIA",
+                                           className="mission-capability-label",
+                                        ),
+                                        html.Strong(
+                                           "IA federada",
+                                            className="mission-capability-value",
+                                        ),
+                                       ],
+                                     ),
+                                    ],
+                                    ), 
                                 ],
                             ),
                             html.Article(
